@@ -72,17 +72,17 @@ graph TD
 
 **Objetivo del Tema**: Comprender los mecanismos fundamentales de IPC y protocolos de comunicación que sustentan MCP.
 
-- **Subtema 0.1.1**: JSON como Formato de Intercambio de Datos
+- **[Subtema 0.1.1](modulo_0/tema_0.1/subtema_0.1.1.md)**: JSON como Formato de Intercambio de Datos
   - Objetivo: Parsear y construir estructuras JSON complejas incluyendo tipos anidados, arrays y validación de esquemas.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 0.1.2**: HTTP: Métodos, Headers y Ciclo Request-Response
+- **[Subtema 0.1.2](modulo_0/tema_0.1/subtema_0.1.2.md)**: HTTP: Métodos, Headers y Ciclo Request-Response
   - Objetivo: Describir el flujo completo de una petición HTTP incluyendo métodos, status codes, headers y body.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 0.1.3**: APIs REST: Diseño y Consumo
+- **[Subtema 0.1.3](modulo_0/tema_0.1/subtema_0.1.3.md)**: APIs REST: Diseño y Consumo
   - Objetivo: Consumir APIs REST usando herramientas de línea de comandos y código, interpretando respuestas correctamente.
   - Tipo: Mixto
   - Requiere Código: Sí
@@ -91,17 +91,17 @@ graph TD
 
 **Objetivo del Tema**: Entender el contexto tecnológico en el que opera MCP y por qué es necesario.
 
-- **Subtema 0.2.1**: Qué Son los Modelos de Lenguaje (LLMs)
+- **[Subtema 0.2.1](modulo_0/tema_0.2/subtema_0.2.1.md)**: Qué Son los Modelos de Lenguaje (LLMs)
   - Objetivo: Explicar qué es un LLM, cómo genera texto y cuáles son sus limitaciones fundamentales (alucinaciones, corte de conocimiento, falta de acceso a herramientas).
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 0.2.2**: El Problema de la Integración: Por Qué los LLMs Necesitan Herramientas
+- **[Subtema 0.2.2](modulo_0/tema_0.2/subtema_0.2.2.md)**: El Problema de la Integración: Por Qué los LLMs Necesitan Herramientas
   - Objetivo: Identificar las limitaciones de los LLMs aislados y explicar por qué se requieren protocolos de integración como MCP.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 0.2.3**: Panorama de Soluciones: Function Calling, Tool Use y Protocolos Abiertos
+- **[Subtema 0.2.3](modulo_0/tema_0.2/subtema_0.2.3.md)**: Panorama de Soluciones: Function Calling, Tool Use y Protocolos Abiertos
   - Objetivo: Comparar las aproximaciones existentes para conectar LLMs con herramientas externas, identificando ventajas y limitaciones de cada una.
   - Tipo: Teórico
   - Requiere Código: No
@@ -110,17 +110,17 @@ graph TD
 
 **Objetivo del Tema**: Configurar un entorno de desarrollo completo para trabajar con MCP durante todo el curso.
 
-- **Subtema 0.3.1**: Instalación de Node.js, Python y Gestores de Paquetes
+- **[Subtema 0.3.1](modulo_0/tema_0.3/subtema_0.3.1.md)**: Instalación de Node.js, Python y Gestores de Paquetes
   - Objetivo: Instalar y configurar Node.js (v18+), Python (3.10+), npm, pip y uv en el sistema operativo del estudiante.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 0.3.2**: IDEs y Extensiones Recomendadas
+- **[Subtema 0.3.2](modulo_0/tema_0.3/subtema_0.3.2.md)**: IDEs y Extensiones Recomendadas
   - Objetivo: Configurar VS Code con las extensiones necesarias para desarrollo MCP (TypeScript, Python, JSON Schema validator).
   - Tipo: Práctico
   - Requiere Código: No
 
-- **Subtema 0.3.3**: Primer Contacto con Claude Desktop y MCP Inspector
+- **[Subtema 0.3.3](modulo_0/tema_0.3/subtema_0.3.3.md)**: Primer Contacto con Claude Desktop y MCP Inspector
   - Objetivo: Instalar Claude Desktop y MCP Inspector, verificando la conectividad básica con un servidor MCP de ejemplo.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -148,17 +148,17 @@ graph TD
 
 **Objetivo del Tema**: Contextualizar MCP dentro del ecosistema de IA y comprender las decisiones de diseño que motivaron su creación.
 
-- **Subtema 1.1.1**: Historia de MCP: De Anthropic al Estándar Abierto
+- **[Subtema 1.1.1](modulo_1/tema_1.1/subtema_1.1.1.md)**: Historia de MCP: De Anthropic al Estándar Abierto
   - Objetivo: Narrar la evolución de MCP desde su lanzamiento por Anthropic en noviembre 2024 hasta su donación a la Linux Foundation y adopción por la industria.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.1.2**: El Problema N×M y la Propuesta de Valor de MCP
+- **[Subtema 1.1.2](modulo_1/tema_1.1/subtema_1.1.2.md)**: El Problema N×M y la Propuesta de Valor de MCP
   - Objetivo: Explicar cómo MCP resuelve el problema de integración N aplicaciones × M herramientas mediante un protocolo estandarizado, usando la analogía del puerto USB.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.1.3**: Principios de Diseño: Localidad, Seguridad y Composabilidad
+- **[Subtema 1.1.3](modulo_1/tema_1.1/subtema_1.1.3.md)**: Principios de Diseño: Localidad, Seguridad y Composabilidad
   - Objetivo: Enumerar y explicar los principios fundamentales de diseño de MCP incluyendo server locality, user consent, y composability.
   - Tipo: Teórico
   - Requiere Código: No
@@ -167,17 +167,17 @@ graph TD
 
 **Objetivo del Tema**: Dominar los roles y responsabilidades de cada componente en la arquitectura MCP.
 
-- **Subtema 1.2.1**: Los Tres Roles: Host, Client y Server
+- **[Subtema 1.2.1](modulo_1/tema_1.2/subtema_1.2.1.md)**: Los Tres Roles: Host, Client y Server
   - Objetivo: Diferenciar las responsabilidades de Host (aplicación de IA), Client (conector de protocolo) y Server (proveedor de capacidades) con diagramas de interacción.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.2.2**: Negociación de Capacidades (Capability Negotiation)
+- **[Subtema 1.2.2](modulo_1/tema_1.2/subtema_1.2.2.md)**: Negociación de Capacidades (Capability Negotiation)
   - Objetivo: Implementar el handshake de inicialización entre client y server describiendo el intercambio de capabilities, protocol version y server info.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 1.2.3**: Ciclo de Vida de una Conexión MCP
+- **[Subtema 1.2.3](modulo_1/tema_1.2/subtema_1.2.3.md)**: Ciclo de Vida de una Conexión MCP
   - Objetivo: Trazar el flujo completo de una conexión MCP desde initialize hasta shutdown, incluyendo los estados intermedios y posibles errores.
   - Tipo: Mixto
   - Requiere Código: Sí
@@ -186,17 +186,17 @@ graph TD
 
 **Objetivo del Tema**: Dominar el formato de mensajes JSON-RPC 2.0 tal como lo usa MCP.
 
-- **Subtema 1.3.1**: Anatomía de un Mensaje JSON-RPC: Request, Response, Notification
+- **[Subtema 1.3.1](modulo_1/tema_1.3/subtema_1.3.1.md)**: Anatomía de un Mensaje JSON-RPC: Request, Response, Notification
   - Objetivo: Construir manualmente mensajes JSON-RPC válidos para requests (con id), responses (result/error) y notifications (sin id), aplicando la especificación 2.0.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 1.3.2**: Métodos del Protocolo MCP: El Catálogo Completo
+- **[Subtema 1.3.2](modulo_1/tema_1.3/subtema_1.3.2.md)**: Métodos del Protocolo MCP: El Catálogo Completo
   - Objetivo: Clasificar los 30+ métodos del protocolo MCP por categoría (lifecycle, tools, resources, prompts, sampling, etc.) describiendo la firma de cada uno.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.3.3**: Manejo de Errores: Códigos Estándar y Personalizados
+- **[Subtema 1.3.3](modulo_1/tema_1.3/subtema_1.3.3.md)**: Manejo de Errores: Códigos Estándar y Personalizados
   - Objetivo: Implementar manejo de errores robusto usando los códigos de error estándar de JSON-RPC (-32700, -32600, etc.) y los códigos específicos de MCP.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -205,17 +205,17 @@ graph TD
 
 **Objetivo del Tema**: Comprender la evolución de la especificación MCP y las diferencias entre versiones.
 
-- **Subtema 1.4.1**: Especificación 2024-11-05: La Base Fundacional
+- **[Subtema 1.4.1](modulo_1/tema_1.4/subtema_1.4.1.md)**: Especificación 2024-11-05: La Base Fundacional
   - Objetivo: Describir las capacidades y limitaciones de la primera versión estable de la especificación MCP.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.4.2**: Especificación 2025-03-26: Streamable HTTP y OAuth
+- **[Subtema 1.4.2](modulo_1/tema_1.4/subtema_1.4.2.md)**: Especificación 2025-03-26: Streamable HTTP y OAuth
   - Objetivo: Identificar los cambios introducidos en la segunda versión mayor incluyendo Streamable HTTP transport, OAuth 2.1 y mejoras en herramientas.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 1.4.3**: Especificación 2025-06-18: Elicitation, Audio y JSON Output
+- **[Subtema 1.4.3](modulo_1/tema_1.4/subtema_1.4.3.md)**: Especificación 2025-06-18: Elicitation, Audio y JSON Output
   - Objetivo: Analizar las adiciones de la tercera versión incluyendo elicitation, soporte para audio y structured output en herramientas.
   - Tipo: Teórico
   - Requiere Código: No
@@ -243,17 +243,17 @@ graph TD
 
 **Objetivo del Tema**: Implementar comunicación MCP sobre stdin/stdout para servidores locales.
 
-- **Subtema 2.1.1**: Modelo de Comunicación: stdin/stdout como Canal Bidireccional
+- **[Subtema 2.1.1](modulo_2/tema_2.1/subtema_2.1.1.md)**: Modelo de Comunicación: stdin/stdout como Canal Bidireccional
   - Objetivo: Explicar cómo MCP utiliza stdin para recibir mensajes y stdout para enviarlos, con stderr reservado para logging, incluyendo el delimitador de mensajes (newline).
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 2.1.2**: Implementación de un Servidor stdio Desde Cero
+- **[Subtema 2.1.2](modulo_2/tema_2.1/subtema_2.1.2.md)**: Implementación de un Servidor stdio Desde Cero
   - Objetivo: Construir un servidor MCP funcional que lea de stdin y escriba a stdout procesando mensajes JSON-RPC línea por línea.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 2.1.3**: Gestión de Procesos y Ciclo de Vida en stdio
+- **[Subtema 2.1.3](modulo_2/tema_2.1/subtema_2.1.3.md)**: Gestión de Procesos y Ciclo de Vida en stdio
   - Objetivo: Implementar la gestión correcta del proceso hijo incluyendo spawn, señales de terminación (SIGTERM/SIGINT) y cleanup de recursos.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -262,17 +262,17 @@ graph TD
 
 **Objetivo del Tema**: Implementar el transporte HTTP+SSE para servidores MCP remotos (legacy).
 
-- **Subtema 2.2.1**: Server-Sent Events: Fundamentos y Flujo Unidireccional
+- **[Subtema 2.2.1](modulo_2/tema_2.2/subtema_2.2.1.md)**: Server-Sent Events: Fundamentos y Flujo Unidireccional
   - Objetivo: Describir el protocolo SSE incluyendo el formato de eventos, reconexión automática y su rol como canal server-to-client en MCP.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 2.2.2**: Arquitectura Dual: Endpoint SSE + Endpoint POST
+- **[Subtema 2.2.2](modulo_2/tema_2.2/subtema_2.2.2.md)**: Arquitectura Dual: Endpoint SSE + Endpoint POST
   - Objetivo: Implementar un servidor HTTP que exponga un endpoint SSE para mensajes server-to-client y un endpoint POST para mensajes client-to-server.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 2.2.3**: Limitaciones del Transporte SSE y Motivación para Streamable HTTP
+- **[Subtema 2.2.3](modulo_2/tema_2.2/subtema_2.2.3.md)**: Limitaciones del Transporte SSE y Motivación para Streamable HTTP
   - Objetivo: Analizar las limitaciones de SSE (unidireccional, no soporta resumability nativa, requiere dos conexiones) y por qué se diseñó Streamable HTTP.
   - Tipo: Teórico
   - Requiere Código: No
@@ -281,22 +281,22 @@ graph TD
 
 **Objetivo del Tema**: Dominar el transporte moderno de MCP para comunicación remota con soporte de streaming bidireccional.
 
-- **Subtema 2.3.1**: Arquitectura de Streamable HTTP: Un Solo Endpoint, Múltiples Modos
+- **[Subtema 2.3.1](modulo_2/tema_2.3/subtema_2.3.1.md)**: Arquitectura de Streamable HTTP: Un Solo Endpoint, Múltiples Modos
   - Objetivo: Explicar cómo Streamable HTTP unifica la comunicación en un solo endpoint que soporta POST regular, POST con SSE streaming y GET para server-initiated streams.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 2.3.2**: Gestión de Sesiones: Mcp-Session-Id y Estado del Servidor
+- **[Subtema 2.3.2](modulo_2/tema_2.3/subtema_2.3.2.md)**: Gestión de Sesiones: Mcp-Session-Id y Estado del Servidor
   - Objetivo: Implementar la gestión de sesiones MCP incluyendo la creación, validación y terminación de session IDs via headers HTTP.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 2.3.3**: Resumability y Reconexión con Last-Event-ID
+- **[Subtema 2.3.3](modulo_2/tema_2.3/subtema_2.3.3.md)**: Resumability y Reconexión con Last-Event-ID
   - Objetivo: Implementar soporte de reconexión usando el header Last-Event-ID para que clientes puedan reanudar streams interrumpidos sin pérdida de mensajes.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 2.3.4**: Compatibilidad Retroactiva: Soporte Dual SSE y Streamable HTTP
+- **[Subtema 2.3.4](modulo_2/tema_2.3/subtema_2.3.4.md)**: Compatibilidad Retroactiva: Soporte Dual SSE y Streamable HTTP
   - Objetivo: Configurar un servidor que soporte simultáneamente clientes legacy (SSE) y modernos (Streamable HTTP) usando content negotiation.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -305,12 +305,12 @@ graph TD
 
 **Objetivo del Tema**: Evaluar y seleccionar el transporte apropiado según los requisitos del sistema.
 
-- **Subtema 2.4.1**: Matriz de Decisión: stdio vs SSE vs Streamable HTTP
+- **[Subtema 2.4.1](modulo_2/tema_2.4/subtema_2.4.1.md)**: Matriz de Decisión: stdio vs SSE vs Streamable HTTP
   - Objetivo: Construir una matriz de decisión basada en criterios de localidad, latencia, escalabilidad, seguridad y complejidad de implementación para seleccionar el transporte apropiado.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 2.4.2**: Patrones de Proxy y Tunneling para MCP Remoto
+- **[Subtema 2.4.2](modulo_2/tema_2.4/subtema_2.4.2.md)**: Patrones de Proxy y Tunneling para MCP Remoto
   - Objetivo: Diseñar arquitecturas de proxy que exponen servidores stdio locales como servidores HTTP remotos, incluyendo autenticación y rate limiting.
   - Tipo: Mixto
   - Requiere Código: Sí
@@ -338,17 +338,17 @@ graph TD
 
 **Objetivo del Tema**: Comprender la estructura completa de una herramienta MCP desde su definición hasta su invocación.
 
-- **Subtema 3.1.1**: Definición de Herramientas: name, description e inputSchema
+- **[Subtema 3.1.1](modulo_3/tema_3.1/subtema_3.1.1.md)**: Definición de Herramientas: name, description e inputSchema
   - Objetivo: Definir herramientas MCP completas especificando nombre, descripción orientada al modelo y esquema de entrada JSON Schema con validación de tipos.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 3.1.2**: Descubrimiento: El Flujo tools/list y Paginación
+- **[Subtema 3.1.2](modulo_3/tema_3.1/subtema_3.1.2.md)**: Descubrimiento: El Flujo tools/list y Paginación
   - Objetivo: Implementar el endpoint tools/list con soporte de cursor-based pagination para servidores con gran cantidad de herramientas.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 3.1.3**: Invocación: El Flujo tools/call y Tipos de Contenido de Respuesta
+- **[Subtema 3.1.3](modulo_3/tema_3.1/subtema_3.1.3.md)**: Invocación: El Flujo tools/call y Tipos de Contenido de Respuesta
   - Objetivo: Implementar el handler de tools/call devolviendo resultados en formatos text, image y embedded resource, con manejo correcto de isError.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -357,17 +357,17 @@ graph TD
 
 **Objetivo del Tema**: Implementar patrones avanzados de herramientas incluyendo operaciones destructivas, anotaciones y notificaciones de cambio.
 
-- **Subtema 3.2.1**: Anotaciones de Herramientas: readOnlyHint, destructiveHint, openWorldHint
+- **[Subtema 3.2.1](modulo_3/tema_3.2/subtema_3.2.1.md)**: Anotaciones de Herramientas: readOnlyHint, destructiveHint, openWorldHint
   - Objetivo: Aplicar anotaciones semánticas a herramientas para que los hosts puedan tomar decisiones informadas sobre consentimiento del usuario y políticas de ejecución.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 3.2.2**: Structured Output: outputSchema y Resultados Tipados
+- **[Subtema 3.2.2](modulo_3/tema_3.2/subtema_3.2.2.md)**: Structured Output: outputSchema y Resultados Tipados
   - Objetivo: Definir esquemas de salida para herramientas que requieren resultados estructurados procesables por el cliente, usando outputSchema con JSON Schema.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 3.2.3**: Notificaciones de Cambio: tools/list_changed
+- **[Subtema 3.2.3](modulo_3/tema_3.2/subtema_3.2.3.md)**: Notificaciones de Cambio: tools/list_changed
   - Objetivo: Implementar actualización dinámica del catálogo de herramientas notificando al cliente cuando se agregan, modifican o eliminan herramientas en tiempo de ejecución.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -376,22 +376,22 @@ graph TD
 
 **Objetivo del Tema**: Aplicar buenas prácticas en el diseño de herramientas MCP para maximizar usabilidad y seguridad.
 
-- **Subtema 3.3.1**: Granularidad: Herramientas Atómicas vs Herramientas Compuestas
+- **[Subtema 3.3.1](modulo_3/tema_3.3/subtema_3.3.1.md)**: Granularidad: Herramientas Atómicas vs Herramientas Compuestas
   - Objetivo: Evaluar la granularidad apropiada de herramientas comparando diseños atómicos (una operación) versus compuestos (múltiples operaciones), identificando trade-offs de descubribilidad y complejidad.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 3.3.2**: Validación de Entrada y Sanitización para Seguridad
+- **[Subtema 3.3.2](modulo_3/tema_3.3/subtema_3.3.2.md)**: Validación de Entrada y Sanitización para Seguridad
   - Objetivo: Implementar validación exhaustiva de entradas en herramientas MCP previniendo inyección de comandos, path traversal y otros ataques OWASP Top 10.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 3.3.3**: Herramientas de Larga Duración y Reporte de Progreso
+- **[Subtema 3.3.3](modulo_3/tema_3.3/subtema_3.3.3.md)**: Herramientas de Larga Duración y Reporte de Progreso
   - Objetivo: Implementar herramientas que reportan progreso incremental usando notifications/progress para operaciones que tardan más de unos segundos.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 3.3.4**: Proyecto Práctico: Servidor MCP de Gestión de Base de Datos
+- **[Subtema 3.3.4](modulo_3/tema_3.3/subtema_3.3.4.md)**: Proyecto Práctico: Servidor MCP de Gestión de Base de Datos
   - Objetivo: Construir un servidor MCP completo que exponga operaciones CRUD sobre una base de datos SQLite con herramientas para query, insert, update y schema inspection.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -419,22 +419,22 @@ graph TD
 
 **Objetivo del Tema**: Exponer datos y contenido del servidor como recursos direccionables por URI.
 
-- **Subtema 4.1.1**: El Modelo de Recursos: URIs, Tipos MIME y Contenido
+- **[Subtema 4.1.1](modulo_4/tema_4.1/subtema_4.1.1.md)**: El Modelo de Recursos: URIs, Tipos MIME y Contenido
   - Objetivo: Definir recursos MCP con URIs únicos, tipos MIME apropiados y contenido en formato text o blob (base64), explicando cuándo usar cada formato.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 4.1.2**: Listado y Lectura: resources/list y resources/read
+- **[Subtema 4.1.2](modulo_4/tema_4.1/subtema_4.1.2.md)**: Listado y Lectura: resources/list y resources/read
   - Objetivo: Implementar los endpoints de listado (con paginación) y lectura de recursos, devolviendo contenido completo o parcial según el URI solicitado.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 4.1.3**: Resource Templates: URIs Dinámicos con Parámetros
+- **[Subtema 4.1.3](modulo_4/tema_4.1/subtema_4.1.3.md)**: Resource Templates: URIs Dinámicos con Parámetros
   - Objetivo: Definir templates de recursos usando RFC 6570 URI templates que permiten al cliente construir URIs dinámicos con parámetros variables.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 4.1.4**: Suscripciones: Notificación de Cambios en Recursos
+- **[Subtema 4.1.4](modulo_4/tema_4.1/subtema_4.1.4.md)**: Suscripciones: Notificación de Cambios en Recursos
   - Objetivo: Implementar el flujo de suscripción a recursos (resources/subscribe, resources/unsubscribe) y emitir notificaciones resources/updated cuando el contenido cambia.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -443,17 +443,17 @@ graph TD
 
 **Objetivo del Tema**: Crear plantillas de prompts reutilizables y parametrizables que el host puede presentar al usuario.
 
-- **Subtema 4.2.1**: Definición de Prompts: name, description y arguments
+- **[Subtema 4.2.1](modulo_4/tema_4.2/subtema_4.2.1.md)**: Definición de Prompts: name, description y arguments
   - Objetivo: Definir prompts MCP con argumentos tipados (required/optional) y descripciones que guíen al host en la presentación al usuario.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 4.2.2**: Resolución de Prompts: prompts/get y Mensajes Multi-Rol
+- **[Subtema 4.2.2](modulo_4/tema_4.2/subtema_4.2.2.md)**: Resolución de Prompts: prompts/get y Mensajes Multi-Rol
   - Objetivo: Implementar la resolución de prompts que devuelve secuencias de mensajes con roles (user/assistant) y contenido mixto (text, image, embedded resources).
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 4.2.3**: Prompts Dinámicos: Generación Contextual y Datos Embebidos
+- **[Subtema 4.2.3](modulo_4/tema_4.2/subtema_4.2.3.md)**: Prompts Dinámicos: Generación Contextual y Datos Embebidos
   - Objetivo: Construir prompts que consultan datos en tiempo real (bases de datos, APIs) para generar contexto dinámico y enriquecer la interacción con el LLM.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -462,12 +462,12 @@ graph TD
 
 **Objetivo del Tema**: Implementar sugerencias de autocompletado para argumentos de prompts y parámetros de resource templates.
 
-- **Subtema 4.3.1**: completion/complete: Autocompletado en Tiempo Real
+- **[Subtema 4.3.1](modulo_4/tema_4.3/subtema_4.3.1.md)**: completion/complete: Autocompletado en Tiempo Real
   - Objetivo: Implementar el endpoint completion/complete que devuelve sugerencias contextuales para argumentos de prompts y parámetros de URI templates mientras el usuario escribe.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 4.3.2**: Proyecto Práctico: Servidor MCP de Documentación Técnica
+- **[Subtema 4.3.2](modulo_4/tema_4.3/subtema_4.3.2.md)**: Proyecto Práctico: Servidor MCP de Documentación Técnica
   - Objetivo: Construir un servidor MCP que exponga documentación técnica como resources, ofrezca prompts para consulta inteligente, y soporte autocompletado de secciones y términos.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -495,17 +495,17 @@ graph TD
 
 **Objetivo del Tema**: Utilizar la capacidad del servidor de solicitar al client que genere texto usando su LLM.
 
-- **Subtema 5.1.1**: El Flujo Inverso: Cuando el Servidor Necesita al LLM
+- **[Subtema 5.1.1](modulo_5/tema_5.1/subtema_5.1.1.md)**: El Flujo Inverso: Cuando el Servidor Necesita al LLM
   - Objetivo: Explicar el modelo de sampling donde el servidor envía sampling/createMessage al client, el host presenta la solicitud al usuario para aprobación, y el LLM genera la respuesta.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 5.1.2**: Parámetros de Sampling: Messages, Model Preferences y System Prompt
+- **[Subtema 5.1.2](modulo_5/tema_5.1/subtema_5.1.2.md)**: Parámetros de Sampling: Messages, Model Preferences y System Prompt
   - Objetivo: Configurar solicitudes de sampling especificando historial de mensajes, preferencias de modelo (hints, costPriority, speedPriority, intelligencePriority) y system prompt opcional.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 5.1.3**: Human-in-the-Loop: Consentimiento y Modificación por el Usuario
+- **[Subtema 5.1.3](modulo_5/tema_5.1/subtema_5.1.3.md)**: Human-in-the-Loop: Consentimiento y Modificación por el Usuario
   - Objetivo: Diseñar flujos de sampling que respeten el principio de consentimiento del usuario, permitiendo revisión, modificación o rechazo de las solicitudes del servidor.
   - Tipo: Mixto
   - Requiere Código: Sí
@@ -514,12 +514,12 @@ graph TD
 
 **Objetivo del Tema**: Utilizar roots para informar al servidor sobre el contexto de archivos del usuario.
 
-- **Subtema 5.2.1**: Qué Son los Roots y Para Qué Sirven
+- **[Subtema 5.2.1](modulo_5/tema_5.2/subtema_5.2.1.md)**: Qué Son los Roots y Para Qué Sirven
   - Objetivo: Explicar cómo roots proporcionan al servidor información sobre los directorios y archivos relevantes del usuario sin otorgar acceso directo.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 5.2.2**: Listado y Notificaciones: roots/list y roots/list_changed
+- **[Subtema 5.2.2](modulo_5/tema_5.2/subtema_5.2.2.md)**: Listado y Notificaciones: roots/list y roots/list_changed
   - Objetivo: Implementar consulta de roots en el cliente y responder a notificaciones de cambio cuando el usuario abre o cierra proyectos.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -528,12 +528,12 @@ graph TD
 
 **Objetivo del Tema**: Solicitar información directamente al usuario desde el servidor MCP.
 
-- **Subtema 5.3.1**: elicitation/create: Formularios Dinámicos del Servidor
+- **[Subtema 5.3.1](modulo_5/tema_5.3/subtema_5.3.1.md)**: elicitation/create: Formularios Dinámicos del Servidor
   - Objetivo: Implementar solicitudes de elicitation que presentan formularios al usuario con campos tipados (string, boolean, enum) y validaciones usando JSON Schema.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 5.3.2**: Casos de Uso: Confirmación de Acciones, Recolección de Credenciales y Desambiguación
+- **[Subtema 5.3.2](modulo_5/tema_5.3/subtema_5.3.2.md)**: Casos de Uso: Confirmación de Acciones, Recolección de Credenciales y Desambiguación
   - Objetivo: Diseñar flujos de elicitation para tres escenarios reales: confirmar operaciones destructivas, solicitar credenciales de servicio y resolver ambigüedades en la solicitud del usuario.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -542,12 +542,12 @@ graph TD
 
 **Objetivo del Tema**: Implementar los mecanismos de observabilidad del protocolo MCP.
 
-- **Subtema 5.4.1**: Logging Estructurado: notifications/message y Niveles de Log
+- **[Subtema 5.4.1](modulo_5/tema_5.4/subtema_5.4.1.md)**: Logging Estructurado: notifications/message y Niveles de Log
   - Objetivo: Implementar logging estructurado desde el servidor usando niveles (debug, info, warning, error, critical) con datos contextuales adjuntos.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 5.4.2**: Reporte de Progreso: notifications/progress con Tokens de Progreso
+- **[Subtema 5.4.2](modulo_5/tema_5.4/subtema_5.4.2.md)**: Reporte de Progreso: notifications/progress con Tokens de Progreso
   - Objetivo: Implementar reporte de progreso vinculado a solicitudes específicas usando progressToken para que el host muestre barras de progreso al usuario.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -556,12 +556,12 @@ graph TD
 
 **Objetivo del Tema**: Exponer datos abstractos o dinámicos como si fueran archivos estáticos para que el LLM los consuma naturalmente.
 
-- **Subtema 5.5.1**: Concepto de Recursos Virtuales
+- **[Subtema 5.5.1](modulo_5/tema_5.5/subtema_5.5.1.md)**: Concepto de Recursos Virtuales
   - Objetivo: Entender cómo mapear estructuras de datos (JSON, DB, API responses) a una jerarquía de "ficheros" virtuales legibles por el LLM.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 5.5.2**: Implementando un Sistema de Archivos Virtual (Read-Only)
+- **[Subtema 5.5.2](modulo_5/tema_5.5/subtema_5.5.2.md)**: Implementando un Sistema de Archivos Virtual (Read-Only)
   - Objetivo: Crear un servidor que exponga una API REST como un árbol de directorios y archivos navegable mediante resources.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -589,17 +589,17 @@ graph TD
 
 **Objetivo del Tema**: Configurar y utilizar el SDK oficial @modelcontextprotocol/sdk para crear servidores MCP.
 
-- **Subtema 6.1.1**: Instalación y Configuración del Proyecto TypeScript
+- **[Subtema 6.1.1](modulo_6/tema_6.1/subtema_6.1.1.md)**: Instalación y Configuración del Proyecto TypeScript
   - Objetivo: Inicializar un proyecto TypeScript con el SDK MCP configurando tsconfig, dependencias y scripts de build/run.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.1.2**: McpServer: La API de Alto Nivel para Servidores
+- **[Subtema 6.1.2](modulo_6/tema_6.1/subtema_6.1.2.md)**: McpServer: La API de Alto Nivel para Servidores
   - Objetivo: Crear un servidor MCP usando la clase McpServer registrando tools, resources y prompts con la API fluida de alto nivel.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.1.3**: Server: La API de Bajo Nivel y Request Handlers
+- **[Subtema 6.1.3](modulo_6/tema_6.1/subtema_6.1.3.md)**: Server: La API de Bajo Nivel y Request Handlers
   - Objetivo: Implementar un servidor usando la clase Server de bajo nivel con handlers de request personalizados para control total del protocolo.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -608,17 +608,17 @@ graph TD
 
 **Objetivo del Tema**: Implementar patrones avanzados de servidores incluyendo herramientas dinámicas, contexto inyectado y gestión de lifecycle.
 
-- **Subtema 6.2.1**: Herramientas con Contexto: RequestHandlerExtra y Sesión
+- **[Subtema 6.2.1](modulo_6/tema_6.2/subtema_6.2.1.md)**: Herramientas con Contexto: RequestHandlerExtra y Sesión
   - Objetivo: Acceder al contexto de la petición incluyendo meta información, session data y server capabilities dentro de los handlers de herramientas.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.2.2**: Registro Dinámico de Herramientas y Recursos
+- **[Subtema 6.2.2](modulo_6/tema_6.2/subtema_6.2.2.md)**: Registro Dinámico de Herramientas y Recursos
   - Objetivo: Agregar y remover herramientas y recursos en tiempo de ejecución basándose en el estado del servidor o la configuración del usuario.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.2.3**: Integración con Frameworks Web: Express y Hono
+- **[Subtema 6.2.3](modulo_6/tema_6.2/subtema_6.2.3.md)**: Integración con Frameworks Web: Express y Hono
   - Objetivo: Montar un servidor MCP dentro de una aplicación Express o Hono existente, compartiendo infraestructura de autenticación y middleware.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -627,17 +627,17 @@ graph TD
 
 **Objetivo del Tema**: Construir clientes MCP que se conecten a servidores, descubran capacidades y consuman herramientas/recursos.
 
-- **Subtema 6.3.1**: Client: Conexión, Inicialización y Descubrimiento
+- **[Subtema 6.3.1](modulo_6/tema_6.3/subtema_6.3.1.md)**: Client: Conexión, Inicialización y Descubrimiento
   - Objetivo: Crear un cliente MCP que se conecte a un servidor vía stdio o Streamable HTTP, negocie capacidades y liste las herramientas/recursos disponibles.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.3.2**: Invocación de Herramientas y Lectura de Recursos desde el Cliente
+- **[Subtema 6.3.2](modulo_6/tema_6.3/subtema_6.3.2.md)**: Invocación de Herramientas y Lectura de Recursos desde el Cliente
   - Objetivo: Implementar flujos completos de invocación de herramientas y lectura de recursos desde el cliente, manejando respuestas, errores y timeouts.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.3.3**: Cliente Multi-Servidor: Conexión Simultánea a Múltiples Servidores
+- **[Subtema 6.3.3](modulo_6/tema_6.3/subtema_6.3.3.md)**: Cliente Multi-Servidor: Conexión Simultánea a Múltiples Servidores
   - Objetivo: Construir un cliente que gestione conexiones simultáneas a múltiples servidores MCP, agregando catálogos de herramientas y enrutando invocaciones correctamente.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -646,22 +646,22 @@ graph TD
 
 **Objetivo del Tema**: Establecer estrategias de testing y debugging efectivas para componentes MCP.
 
-- **Subtema 6.4.1**: MCP Inspector: Debugging Interactivo de Servidores
+- **[Subtema 6.4.1](modulo_6/tema_6.4/subtema_6.4.1.md)**: MCP Inspector: Debugging Interactivo de Servidores
   - Objetivo: Usar MCP Inspector para conectarse a servidores MCP, inspeccionar capacidades, invocar herramientas manualmente y diagnosticar problemas de protocolo.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.4.2**: Testing Unitario: InMemoryTransport y Mocks
+- **[Subtema 6.4.2](modulo_6/tema_6.4/subtema_6.4.2.md)**: Testing Unitario: InMemoryTransport y Mocks
   - Objetivo: Escribir tests unitarios para servidores MCP usando InMemoryTransport para simular la comunicación client-server sin procesos externos.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.4.3**: Testing de Integración: Escenarios End-to-End
+- **[Subtema 6.4.3](modulo_6/tema_6.4/subtema_6.4.3.md)**: Testing de Integración: Escenarios End-to-End
   - Objetivo: Implementar tests de integración que validen el flujo completo client-server incluyendo inicialización, invocación de herramientas y shutdown graceful.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 6.4.4**: Proyecto Práctico: Servidor MCP de API Gateway
+- **[Subtema 6.4.4](modulo_6/tema_6.4/subtema_6.4.4.md)**: Proyecto Práctico: Servidor MCP de API Gateway
   - Objetivo: Construir un servidor MCP que actúe como gateway unificado para múltiples APIs externas (GitHub, Jira, Slack), con herramientas tipadas, recursos dinámicos y tests completos.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -689,17 +689,17 @@ graph TD
 
 **Objetivo del Tema**: Crear servidores MCP usando la API de alto nivel FastMCP con decoradores Pythonic.
 
-- **Subtema 7.1.1**: Instalación con uv y Configuración del Proyecto Python
+- **[Subtema 7.1.1](modulo_7/tema_7.1/subtema_7.1.1.md)**: Instalación con uv y Configuración del Proyecto Python
   - Objetivo: Configurar un proyecto Python con el SDK MCP usando uv como gestor de paquetes, incluyendo pyproject.toml y estructura de directorios.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.1.2**: FastMCP: Decoradores @tool, @resource y @prompt
+- **[Subtema 7.1.2](modulo_7/tema_7.1/subtema_7.1.2.md)**: FastMCP: Decoradores @tool, @resource y @prompt
   - Objetivo: Registrar herramientas, recursos y prompts usando decoradores con type hints de Python para generación automática de JSON Schema.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.1.3**: Context: Logging, Progreso y Acceso al Cliente desde el Servidor
+- **[Subtema 7.1.3](modulo_7/tema_7.1/subtema_7.1.3.md)**: Context: Logging, Progreso y Acceso al Cliente desde el Servidor
   - Objetivo: Usar el objeto Context inyectado en handlers para reportar progreso, emitir logs estructurados, leer recursos y solicitar sampling al cliente.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -708,22 +708,22 @@ graph TD
 
 **Objetivo del Tema**: Implementar patrones avanzados con FastMCP incluyendo lifecycle, imágenes y composición de servidores.
 
-- **Subtema 7.2.1**: Lifespan: Gestión de Recursos del Servidor (DB, HTTP Clients)
+- **[Subtema 7.2.1](modulo_7/tema_7.2/subtema_7.2.1.md)**: Lifespan: Gestión de Recursos del Servidor (DB, HTTP Clients)
   - Objetivo: Implementar el patrón lifespan para inicializar y limpiar recursos compartidos (conexiones a base de datos, HTTP clients, caches) usando el context manager de FastMCP.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.2.2**: Retorno de Imágenes y Contenido Binario
+- **[Subtema 7.2.2](modulo_7/tema_7.2/subtema_7.2.2.md)**: Retorno de Imágenes y Contenido Binario
   - Objetivo: Implementar herramientas y recursos que devuelven contenido binario (imágenes, PDFs) usando el helper Image y encoding base64.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.2.3**: Composición de Servidores: mount(), import_server() y Prefijos
+- **[Subtema 7.2.3](modulo_7/tema_7.2/subtema_7.2.3.md)**: Composición de Servidores: mount(), import_server() y Prefijos
   - Objetivo: Componer múltiples servidores FastMCP en uno solo usando mount y import_server con prefijos de namespace para evitar colisiones de nombres.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.2.4**: Low-Level Server API: Handlers Manuales y Control Total
+- **[Subtema 7.2.4](modulo_7/tema_7.2/subtema_7.2.4.md)**: Low-Level Server API: Handlers Manuales y Control Total
   - Objetivo: Usar la API de bajo nivel del SDK Python para implementar handlers de request personalizados cuando FastMCP no cubre el caso de uso.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -732,12 +732,12 @@ graph TD
 
 **Objetivo del Tema**: Construir clientes MCP en Python para consumir servidores.
 
-- **Subtema 7.3.1**: ClientSession: Conexión y Ciclo de Vida
+- **[Subtema 7.3.1](modulo_7/tema_7.3/subtema_7.3.1.md)**: ClientSession: Conexión y Ciclo de Vida
   - Objetivo: Crear un cliente MCP en Python que se conecte a un servidor, complete el handshake y gestione el ciclo de vida de la sesión correctamente.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.3.2**: Consumo de Tools, Resources y Prompts desde Python
+- **[Subtema 7.3.2](modulo_7/tema_7.3/subtema_7.3.2.md)**: Consumo de Tools, Resources y Prompts desde Python
   - Objetivo: Implementar flujos completos de descubrimiento e invocación de los tres tipos de primitivas desde un cliente Python.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -746,17 +746,17 @@ graph TD
 
 **Objetivo del Tema**: Testar y desplegar servidores MCP Python en múltiples configuraciones.
 
-- **Subtema 7.4.1**: Testing con pytest y Fixtures de Servidor
+- **[Subtema 7.4.1](modulo_7/tema_7.4/subtema_7.4.1.md)**: Testing con pytest y Fixtures de Servidor
   - Objetivo: Escribir tests automatizados para servidores FastMCP usando pytest con fixtures que simulan clientes y validan respuestas de herramientas.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.4.2**: Deployment: stdio, SSE y Streamable HTTP con Configuración de Transporte
+- **[Subtema 7.4.2](modulo_7/tema_7.4/subtema_7.4.2.md)**: Deployment: stdio, SSE y Streamable HTTP con Configuración de Transporte
   - Objetivo: Configurar el mismo servidor FastMCP para ejecutarse en los tres modos de transporte, seleccionando el apropiado según el entorno de despliegue.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 7.4.3**: Proyecto Práctico: Servidor MCP de Machine Learning
+- **[Subtema 7.4.3](modulo_7/tema_7.4/subtema_7.4.3.md)**: Proyecto Práctico: Servidor MCP de Machine Learning
   - Objetivo: Construir un servidor MCP que exponga un pipeline de ML completo: carga de datasets como resources, entrenamiento como tool de larga duración con progreso, predicción como tool con structured output, y métricas como resources suscribibles.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -784,17 +784,17 @@ graph TD
 
 **Objetivo del Tema**: Configurar y utilizar Claude Desktop como host para servidores MCP locales y remotos.
 
-- **Subtema 8.1.1**: Configuración de claude_desktop_config.json
+- **[Subtema 8.1.1](modulo_8/tema_8.1/subtema_8.1.1.md)**: Configuración de claude_desktop_config.json
   - Objetivo: Configurar servidores MCP en Claude Desktop especificando comando, argumentos, variables de entorno y permisos en el archivo de configuración JSON.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 8.1.2**: Debugging: Logs, Errores Comunes y Resolución
+- **[Subtema 8.1.2](modulo_8/tema_8.1/subtema_8.1.2.md)**: Debugging: Logs, Errores Comunes y Resolución
   - Objetivo: Diagnosticar problemas de conexión entre Claude Desktop y servidores MCP usando los logs del sistema, identificando y resolviendo los 5 errores más comunes.
   - Tipo: Práctico
   - Requiere Código: No
 
-- **Subtema 8.1.3**: Servidores Remotos en Claude Desktop con Streamable HTTP
+- **[Subtema 8.1.3](modulo_8/tema_8.1/subtema_8.1.3.md)**: Servidores Remotos en Claude Desktop con Streamable HTTP
   - Objetivo: Configurar Claude Desktop para conectarse a servidores MCP remotos vía Streamable HTTP con autenticación OAuth.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -803,17 +803,17 @@ graph TD
 
 **Objetivo del Tema**: Integrar MCP en flujos de trabajo de desarrollo usando IDEs y herramientas CLI.
 
-- **Subtema 8.2.1**: Claude Code (CLI) como Host MCP
+- **[Subtema 8.2.1](modulo_8/tema_8.2/subtema_8.2.1.md)**: Claude Code (CLI) como Host MCP
   - Objetivo: Configurar y utilizar servidores MCP desde Claude Code (la CLI de Anthropic), aprovechando la integración nativa con el flujo de trabajo del desarrollador.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 8.2.2**: VS Code, Cursor y Windsurf: Configuración de MCP en IDEs
+- **[Subtema 8.2.2](modulo_8/tema_8.2/subtema_8.2.2.md)**: VS Code, Cursor y Windsurf: Configuración de MCP en IDEs
   - Objetivo: Configurar servidores MCP en los principales IDEs con soporte MCP, comparando las diferencias de configuración y capacidades de cada uno.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 8.2.3**: Desarrollo de un Host MCP Personalizado (Mini-App)
+- **[Subtema 8.2.3](modulo_8/tema_8.2/subtema_8.2.3.md)**: Desarrollo de un Host MCP Personalizado (Mini-App)
   - Objetivo: Construir una aplicación de chat mínima que actúe como host MCP, gestionando la conexión a servidores, presentando herramientas al usuario y ejecutando invocaciones con consentimiento.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -822,17 +822,17 @@ graph TD
 
 **Objetivo del Tema**: Integrar MCP con frameworks de agentes de IA para construir sistemas inteligentes.
 
-- **Subtema 8.3.1**: LangChain y LangGraph con MCP
+- **[Subtema 8.3.1](modulo_8/tema_8.3/subtema_8.3.1.md)**: LangChain y LangGraph con MCP
   - Objetivo: Integrar servidores MCP como proveedores de herramientas en agentes LangChain/LangGraph, mapeando tools MCP a LangChain Tools.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 8.3.2**: OpenAI Agents SDK con MCP
+- **[Subtema 8.3.2](modulo_8/tema_8.3/subtema_8.3.2.md)**: OpenAI Agents SDK con MCP
   - Objetivo: Conectar servidores MCP como fuentes de herramientas para agentes del SDK de OpenAI, configurando el adaptador MCP correspondiente.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 8.3.3**: Amazon Bedrock, Google ADK y Otros Frameworks
+- **[Subtema 8.3.3](modulo_8/tema_8.3/subtema_8.3.3.md)**: Amazon Bedrock, Google ADK y Otros Frameworks
   - Objetivo: Integrar MCP con las plataformas de agentes de los principales proveedores cloud, identificando las diferencias en la configuración del adaptador.
   - Tipo: Mixto
   - Requiere Código: Sí
@@ -860,22 +860,22 @@ graph TD
 
 **Objetivo del Tema**: Identificar y clasificar las amenazas de seguridad específicas del ecosistema MCP.
 
-- **Subtema 9.1.1**: Superficie de Ataque: Host, Client, Server y Transporte
+- **[Subtema 9.1.1](modulo_9/tema_9.1/subtema_9.1.1.md)**: Superficie de Ataque: Host, Client, Server y Transporte
   - Objetivo: Mapear la superficie de ataque de un sistema MCP identificando vectores en cada componente y en las comunicaciones entre ellos.
   - Tipo: Teórico
   - Requiere Código: No
 
-- **Subtema 9.1.2**: Tool Poisoning: Descripciones Maliciosas y Exfiltración de Datos
+- **[Subtema 9.1.2](modulo_9/tema_9.1/subtema_9.1.2.md)**: Tool Poisoning: Descripciones Maliciosas y Exfiltración de Datos
   - Objetivo: Demostrar cómo un servidor malicioso puede usar descripciones de herramientas para manipular al LLM y exfiltrar datos sensibles del contexto, y cómo defenderse.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 9.1.3**: Prompt Injection vía MCP: Ataques Indirectos a través de Resources y Tool Results
+- **[Subtema 9.1.3](modulo_9/tema_9.1/subtema_9.1.3.md)**: Prompt Injection vía MCP: Ataques Indirectos a través de Resources y Tool Results
   - Objetivo: Analizar cómo contenido controlado por el atacante en resources o tool results puede inyectar instrucciones al LLM, y diseñar defensas basadas en sanitización y consentimiento.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 9.1.4**: DNS Rebinding, Rug Pulls y Ataques de Session Hijacking
+- **[Subtema 9.1.4](modulo_9/tema_9.1/subtema_9.1.4.md)**: DNS Rebinding, Rug Pulls y Ataques de Session Hijacking
   - Objetivo: Explicar ataques avanzados como DNS rebinding contra servidores locales, rug pulls (cambio dinámico de herramientas) y session hijacking, con contramedidas específicas.
   - Tipo: Teórico
   - Requiere Código: No
@@ -884,22 +884,22 @@ graph TD
 
 **Objetivo del Tema**: Implementar el flujo de autorización OAuth 2.1 especificado por MCP para servidores remotos.
 
-- **Subtema 9.2.1**: El Framework de Autorización MCP: Roles y Flujos
+- **[Subtema 9.2.1](modulo_9/tema_9.2/subtema_9.2.1.md)**: El Framework de Autorización MCP: Roles y Flujos
   - Objetivo: Describir los roles OAuth en MCP (client=MCP client, resource server=MCP server, authorization server) y el flujo de autorización con PKCE obligatorio.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 9.2.2**: Server Metadata Discovery y Dynamic Client Registration
+- **[Subtema 9.2.2](modulo_9/tema_9.2/subtema_9.2.2.md)**: Server Metadata Discovery y Dynamic Client Registration
   - Objetivo: Implementar el descubrimiento de metadata del servidor de autorización (RFC 8414) y el registro dinámico de clientes (RFC 7591) requeridos por la especificación MCP.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 9.2.3**: Implementación Completa: Servidor MCP con OAuth 2.1
+- **[Subtema 9.2.3](modulo_9/tema_9.2/subtema_9.2.3.md)**: Implementación Completa: Servidor MCP con OAuth 2.1
   - Objetivo: Construir un servidor MCP que requiera autenticación OAuth 2.1, respondiendo con HTTP 401 cuando no autorizado y validando tokens Bearer en cada request.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 9.2.4**: Third-Party Authorization y Delegación
+- **[Subtema 9.2.4](modulo_9/tema_9.2/subtema_9.2.4.md)**: Third-Party Authorization y Delegación
   - Objetivo: Implementar delegación de autorización donde el servidor MCP delega la autenticación a un proveedor de identidad externo (GitHub, Google) usando el flujo de terceros.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -908,17 +908,17 @@ graph TD
 
 **Objetivo del Tema**: Aplicar una checklist de seguridad completa para servidores MCP en producción.
 
-- **Subtema 9.3.1**: Validación de Entradas, Rate Limiting y Sandboxing
+- **[Subtema 9.3.1](modulo_9/tema_9.3/subtema_9.3.1.md)**: Validación de Entradas, Rate Limiting y Sandboxing
   - Objetivo: Implementar las tres capas defensivas fundamentales: validación estricta de todas las entradas, limitación de tasa por sesión/IP y aislamiento de ejecución de herramientas.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 9.3.2**: Principio de Mínimo Privilegio y Consentimiento del Usuario
+- **[Subtema 9.3.2](modulo_9/tema_9.3/subtema_9.3.2.md)**: Principio de Mínimo Privilegio y Consentimiento del Usuario
   - Objetivo: Diseñar servidores MCP que soliciten solo las capacidades mínimas necesarias y que informen transparentemente al host sobre las acciones que realizarán.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 9.3.3**: Auditoría de Seguridad: Checklist para Servidores MCP
+- **[Subtema 9.3.3](modulo_9/tema_9.3/subtema_9.3.3.md)**: Auditoría de Seguridad: Checklist para Servidores MCP
   - Objetivo: Aplicar una checklist de auditoría de 20 puntos para evaluar la postura de seguridad de un servidor MCP, identificando vulnerabilidades y proponiendo remediaciones.
   - Tipo: Práctico
   - Requiere Código: No
@@ -946,17 +946,17 @@ graph TD
 
 **Objetivo del Tema**: Combinar múltiples servidores MCP en arquitecturas cohesivas.
 
-- **Subtema 10.1.1**: Patrón Aggregator: Un Cliente, Múltiples Servidores
+- **[Subtema 10.1.1](modulo_10/tema_10.1/subtema_10.1.1.md)**: Patrón Aggregator: Un Cliente, Múltiples Servidores
   - Objetivo: Implementar un host MCP que conecte simultáneamente a N servidores, presente un catálogo unificado de herramientas al LLM y enrute invocaciones al servidor correcto.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 10.1.2**: Patrón Gateway: Proxy Centralizado con Políticas
+- **[Subtema 10.1.2](modulo_10/tema_10.1/subtema_10.1.2.md)**: Patrón Gateway: Proxy Centralizado con Políticas
   - Objetivo: Construir un gateway MCP que actúe como intermediario entre clientes y servidores backend, aplicando políticas de autenticación, rate limiting, logging y transformación de herramientas.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 10.1.3**: Patrón Federation: Servidores que Consumen Otros Servidores
+- **[Subtema 10.1.3](modulo_10/tema_10.1/subtema_10.1.3.md)**: Patrón Federation: Servidores que Consumen Otros Servidores
   - Objetivo: Implementar un servidor MCP que internamente actúe como cliente de otros servidores MCP, componiendo capacidades de múltiples fuentes en una interfaz unificada.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -965,17 +965,17 @@ graph TD
 
 **Objetivo del Tema**: Usar MCP como infraestructura de herramientas para agentes de IA autónomos y multi-agente.
 
-- **Subtema 10.2.1**: Agente Simple con Bucle Tool-Use sobre MCP
+- **[Subtema 10.2.1](modulo_10/tema_10.2/subtema_10.2.1.md)**: Agente Simple con Bucle Tool-Use sobre MCP
   - Objetivo: Construir un agente que use un LLM en bucle, invocando herramientas MCP iterativamente hasta completar una tarea, con criterio de parada y manejo de errores.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 10.2.2**: Sistemas Multi-Agente con Servidores MCP Compartidos
+- **[Subtema 10.2.2](modulo_10/tema_10.2/subtema_10.2.2.md)**: Sistemas Multi-Agente con Servidores MCP Compartidos
   - Objetivo: Diseñar un sistema donde múltiples agentes comparten servidores MCP, coordinando acceso a herramientas y evitando conflictos de estado.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 10.2.3**: MCP vs Agent-to-Agent (A2A): Complementariedad de Protocolos
+- **[Subtema 10.2.3](modulo_10/tema_10.2/subtema_10.2.3.md)**: MCP vs Agent-to-Agent (A2A): Complementariedad de Protocolos
   - Objetivo: Comparar MCP (human-to-agent/agent-to-tool) con A2A (agent-to-agent), diseñando arquitecturas que combinen ambos protocolos según las necesidades.
   - Tipo: Mixto
   - Requiere Código: No
@@ -984,17 +984,17 @@ graph TD
 
 **Objetivo del Tema**: Conocer y utilizar el ecosistema existente de servidores MCP open source.
 
-- **Subtema 10.3.1**: MCP Server Registry y Repositorios Oficiales
+- **[Subtema 10.3.1](modulo_10/tema_10.3/subtema_10.3.1.md)**: MCP Server Registry y Repositorios Oficiales
   - Objetivo: Navegar el registro oficial de servidores MCP, evaluar servidores por calidad y seguridad, e instalar servidores comunitarios en el entorno local.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 10.3.2**: Análisis de Servidores Populares: Filesystem, GitHub, Postgres, Puppeteer
+- **[Subtema 10.3.2](modulo_10/tema_10.3/subtema_10.3.2.md)**: Análisis de Servidores Populares: Filesystem, GitHub, Postgres, Puppeteer
   - Objetivo: Analizar el código fuente de 4 servidores MCP oficiales, identificando patrones de implementación, decisiones de diseño y técnicas reutilizables.
   - Tipo: Mixto
   - Requiere Código: No
 
-- **Subtema 10.3.3**: Publicación de un Servidor MCP: Empaquetado, Documentación y Distribución
+- **[Subtema 10.3.3](modulo_10/tema_10.3/subtema_10.3.3.md)**: Publicación de un Servidor MCP: Empaquetado, Documentación y Distribución
   - Objetivo: Empaquetar un servidor MCP para publicación en npm/PyPI, escribir documentación de instalación y configuración, y publicarlo en el registry de MCP.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -1022,17 +1022,17 @@ graph TD
 
 **Objetivo del Tema**: Implementar observabilidad completa para servidores MCP en producción.
 
-- **Subtema 11.1.1**: Logging Estructurado: Integración con ELK, CloudWatch y Datadog
+- **[Subtema 11.1.1](modulo_11/tema_11.1/subtema_11.1.1.md)**: Logging Estructurado: Integración con ELK, CloudWatch y Datadog
   - Objetivo: Configurar logging estructurado de un servidor MCP para enviar logs a plataformas de observabilidad, incluyendo correlation IDs y métricas de rendimiento.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 11.1.2**: Métricas: Latencia de Herramientas, Tasa de Errores y Uso de Recursos
+- **[Subtema 11.1.2](modulo_11/tema_11.1/subtema_11.1.2.md)**: Métricas: Latencia de Herramientas, Tasa de Errores y Uso de Recursos
   - Objetivo: Instrumentar un servidor MCP con métricas Prometheus/OpenTelemetry midiendo latencia por herramienta, tasa de errores, sesiones activas y consumo de recursos.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 11.1.3**: Alertas y Dashboards: Detectar y Responder a Problemas
+- **[Subtema 11.1.3](modulo_11/tema_11.1/subtema_11.1.3.md)**: Alertas y Dashboards: Detectar y Responder a Problemas
   - Objetivo: Configurar alertas basadas en SLIs (latencia p99, error rate) y dashboards que visualicen el estado operativo del servidor MCP en tiempo real.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -1041,17 +1041,17 @@ graph TD
 
 **Objetivo del Tema**: Escalar servidores MCP para soportar alta concurrencia y cargas de trabajo demandantes.
 
-- **Subtema 11.2.1**: Servidores MCP Stateless vs Stateful: Trade-offs y Patrones
+- **[Subtema 11.2.1](modulo_11/tema_11.2/subtema_11.2.1.md)**: Servidores MCP Stateless vs Stateful: Trade-offs y Patrones
   - Objetivo: Analizar los trade-offs entre servidores stateless (escalables horizontalmente) y stateful (con sesión) diseñando estrategias de escalamiento para cada tipo.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 11.2.2**: Containerización: Docker y Kubernetes para Servidores MCP
+- **[Subtema 11.2.2](modulo_11/tema_11.2/subtema_11.2.2.md)**: Containerización: Docker y Kubernetes para Servidores MCP
   - Objetivo: Containerizar un servidor MCP con Docker y desplegarlo en Kubernetes con health checks, resource limits y horizontal pod autoscaling.
   - Tipo: Práctico
   - Requiere Código: Sí
 
-- **Subtema 11.2.3**: Caching y Optimización de Herramientas Costosas
+- **[Subtema 11.2.3](modulo_11/tema_11.2/subtema_11.2.3.md)**: Caching y Optimización de Herramientas Costosas
   - Objetivo: Implementar estrategias de caching (in-memory, Redis) para resultados de herramientas costosas, con invalidación inteligente y TTL configurables.
   - Tipo: Práctico
   - Requiere Código: Sí
@@ -1060,12 +1060,12 @@ graph TD
 
 **Objetivo del Tema**: Gestionar la evolución de servidores MCP sin romper clientes existentes.
 
-- **Subtema 11.3.1**: Versionado de Herramientas y Compatibilidad con Clientes Legacy
+- **[Subtema 11.3.1](modulo_11/tema_11.3/subtema_11.3.1.md)**: Versionado de Herramientas y Compatibilidad con Clientes Legacy
   - Objetivo: Implementar estrategias de versionado para herramientas MCP que permitan evolucionar la API sin romper clientes existentes.
   - Tipo: Mixto
   - Requiere Código: Sí
 
-- **Subtema 11.3.2**: Continuous Deployment: CI/CD para Servidores MCP
+- **[Subtema 11.3.2](modulo_11/tema_11.3/subtema_11.3.2.md)**: Continuous Deployment: CI/CD para Servidores MCP
   - Objetivo: Configurar un pipeline de CI/CD que ejecute tests, valide el esquema de herramientas contra la especificación MCP y despliegue automáticamente el servidor.
   - Tipo: Práctico
   - Requiere Código: Sí
