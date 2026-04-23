@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1565c0"/><stop offset="100%" stop-color="#1976d2"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1565c0"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Despliegue MCP en Kubernetes (K8s)</text>
+
+  <!-- K8s Cluster Outline -->
+  <rect x="40" y="80" width="720" height="360" rx="12" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" filter="url(#s)"/>
+  <text x="80" y="110" fill="#0d47a1" font-size="16" font-weight="700">Cluster Kubernetes</text>
+
+  <!-- Ingress -->
+  <rect x="80" y="140" width="120" height="240" rx="8" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+  <text x="140" y="250" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="700" transform="rotate(-90 140,250)">Ingress Controller</text>
+  <text x="160" y="250" text-anchor="middle" fill="#1976d2" font-size="10" transform="rotate(-90 160,250)">TLS Termination / WAF</text>
+
+  <line x1="20" y1="260" x2="80" y2="260" stroke="#1565c0" stroke-width="3" marker-end="url(#a)"/>
+  <text x="50" y="250" text-anchor="middle" fill="#0d47a1" font-size="12" font-weight="700">HTTPS</text>
+
+  <!-- Service -->
+  <rect x="250" y="140" width="80" height="240" rx="6" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="290" y="250" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="700" transform="rotate(-90 290,250)">Service (ClusterIP)</text>
+
+  <line x1="200" y1="260" x2="250" y2="260" stroke="#1565c0" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- Deployment / Pods -->
+  <rect x="380" y="120" width="340" height="300" rx="8" fill="#fff" stroke="#0d47a1" stroke-width="2" stroke-dasharray="4"/>
+  <text x="550" y="145" text-anchor="middle" fill="#0d47a1" font-size="14" font-weight="700">Deployment (MCP Server)</text>
+
+  <!-- Pod 1 -->
+  <rect x="400" y="170" width="140" height="100" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="470" y="195" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Pod 1</text>
+  <rect x="410" y="210" width="120" height="20" rx="4" fill="#c8e6c9"/>
+  <text x="470" y="224" text-anchor="middle" fill="#1b5e20" font-size="10">Container (Node/Python)</text>
+  <rect x="410" y="240" width="55" height="20" rx="4" fill="#fff"/>
+  <text x="437" y="254" text-anchor="middle" fill="#388e3c" font-size="9">Liveness</text>
+  <rect x="475" y="240" width="55" height="20" rx="4" fill="#fff"/>
+  <text x="502" y="254" text-anchor="middle" fill="#388e3c" font-size="9">Readiness</text>
+
+  <!-- Pod 2 -->
+  <rect x="560" y="170" width="140" height="100" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="630" y="195" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Pod 2</text>
+  <rect x="570" y="210" width="120" height="20" rx="4" fill="#c8e6c9"/>
+  <text x="630" y="224" text-anchor="middle" fill="#1b5e20" font-size="10">Container (Node/Python)</text>
+  <rect x="570" y="240" width="55" height="20" rx="4" fill="#fff"/>
+  <text x="597" y="254" text-anchor="middle" fill="#388e3c" font-size="9">Liveness</text>
+  <rect x="635" y="240" width="55" height="20" rx="4" fill="#fff"/>
+  <text x="662" y="254" text-anchor="middle" fill="#388e3c" font-size="9">Readiness</text>
+
+  <!-- Pod 3 -->
+  <rect x="400" y="290" width="140" height="100" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="470" y="315" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Pod 3</text>
+  <rect x="410" y="330" width="120" height="20" rx="4" fill="#c8e6c9"/>
+  <text x="470" y="344" text-anchor="middle" fill="#1b5e20" font-size="10">Container (Node/Python)</text>
+
+  <!-- HPA -->
+  <rect x="560" y="290" width="140" height="100" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="630" y="315" text-anchor="middle" fill="#e65100" font-size="12" font-weight="700">HPA</text>
+  <text x="630" y="340" text-anchor="middle" fill="#ef6c00" font-size="10">Auto-Scaling basado en:</text>
+  <text x="630" y="355" text-anchor="middle" fill="#ef6c00" font-size="10">- CPU / Memoria</text>
+  <text x="630" y="370" text-anchor="middle" fill="#ef6c00" font-size="10">- Req/segundo</text>
+
+  <!-- Routes -->
+  <path d="M 330 200 Q 360 200 400 220" fill="none" stroke="#1565c0" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 330 260 Q 360 260 560 220" fill="none" stroke="#1565c0" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M 330 320 Q 360 320 400 340" fill="none" stroke="#1565c0" stroke-width="1.5" marker-end="url(#a)"/>
+
+</svg>

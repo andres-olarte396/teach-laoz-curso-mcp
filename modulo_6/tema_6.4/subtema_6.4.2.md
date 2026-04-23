@@ -1,5 +1,7 @@
 # Subtema 6.4.2: Testing Unitario: InMemoryTransport
 
+![Estrategias Testing](../../../diagramas/modulo_6/estrategias_testing_ts.svg)
+
 Para tests unitarios, no queremos lanzar subprocesos reales. El SDK provee `InMemoryTransport` para conectar cliente y servidor en el mismo proceso de memoria.
 
 ## Setup con Vitest/Jest
@@ -62,3 +64,4 @@ describe("Mi Servidor MCP", () => {
 ```
 
 Esto ejecuta los tests en milisegundos, sin I/O real.
+

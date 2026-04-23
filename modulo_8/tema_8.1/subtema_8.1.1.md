@@ -1,5 +1,7 @@
 # Subtema 8.1.1: Configuración de claude_desktop_config.json
 
+![Claude Desktop Config](../../../diagramas/modulo_8/claude_desktop_config.svg)
+
 Claude Desktop es actualmente el host (cliente) más popular para MCP. Permite a Claude interactuar con tus herramientas locales.
 
 ## Ubicación del Archivo
@@ -32,3 +34,4 @@ El archivo define un mapa de servidores bajo la clave `mcpServers`.
 ```
 
 > **Nota:** Siempre usa rutas absolutas para evitar problemas.
+

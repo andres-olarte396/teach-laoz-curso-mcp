@@ -1,5 +1,7 @@
 # Subtema 6.1.2: McpServer: La API de Alto Nivel para Servidores
 
+![McpServer vs Server](../../../diagramas/modulo_6/sdk_ts_arquitectura.svg)
+
 La clase `McpServer` es la forma más rápida y segura de crear un servidor. Abstrae la gestión de conexiones y validación de tipos.
 
 ## Hello World en MCP
@@ -59,5 +61,8 @@ Para probarlo, compila y configura en Claude Desktop:
 ```bash
 npm run build
 # O usa tsx directamente
+
+![McpServer vs Server](../../../diagramas/modulo_6/sdk_ts_arquitectura.svg)
 npx tsx src/index.ts
 ```
+

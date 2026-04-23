@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#000000"/><stop offset="100%" stop-color="#333333"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#333"/></marker>
+    <marker id="ab" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0288d1"/></marker>
+    <marker id="ag" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4caf50"/></marker>
+  </defs>
+  <rect width="800" height="600" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Arquitectura: Proyecto Integrador Final</text>
+
+  <!-- USER LAYER -->
+  <rect x="40" y="80" width="160" height="480" rx="8" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <text x="120" y="110" text-anchor="middle" fill="#01579b" font-size="16" font-weight="700">Capa de Usuario</text>
+
+  <rect x="60" y="140" width="120" height="100" rx="6" fill="#fff" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="120" y="165" text-anchor="middle" fill="#0288d1" font-size="12" font-weight="700">Host Web</text>
+  <text x="120" y="185" text-anchor="middle" fill="#546e7a" font-size="10">Next.js React App</text>
+  <rect x="70" y="200" width="100" height="25" rx="4" fill="#b3e5fc"/>
+  <text x="120" y="216" text-anchor="middle" fill="#01579b" font-size="10">UI Chat + Tools</text>
+
+  <rect x="60" y="280" width="120" height="100" rx="6" fill="#fff" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="120" y="305" text-anchor="middle" fill="#0288d1" font-size="12" font-weight="700">Client Logic</text>
+  <text x="120" y="325" text-anchor="middle" fill="#546e7a" font-size="10">TypeScript SDK</text>
+  <rect x="70" y="340" width="100" height="25" rx="4" fill="#b3e5fc"/>
+  <text x="120" y="356" text-anchor="middle" fill="#01579b" font-size="10">@mcp/client</text>
+
+  <rect x="60" y="420" width="120" height="100" rx="6" fill="#fff" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="120" y="445" text-anchor="middle" fill="#7b1fa2" font-size="12" font-weight="700">LLM Provider</text>
+  <text x="120" y="465" text-anchor="middle" fill="#546e7a" font-size="10">Anthropic/OpenAI</text>
+  <rect x="70" y="480" width="100" height="25" rx="4" fill="#e1bee7"/>
+  <text x="120" y="496" text-anchor="middle" fill="#7b1fa2" font-size="10">Tool Calling</text>
+
+  <line x1="120" y1="240" x2="120" y2="280" stroke="#0288d1" stroke-width="2" marker-end="url(#ab)"/>
+  <line x1="120" y1="380" x2="120" y2="420" stroke="#9c27b0" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- GATEWAY LAYER -->
+  <line x1="200" y1="330" x2="260" y2="330" stroke="#0288d1" stroke-width="2.5" marker-end="url(#ab)"/>
+  <text x="230" y="320" text-anchor="middle" fill="#0288d1" font-size="10">SSE/HTTP</text>
+
+  <rect x="260" y="80" width="180" height="480" rx="8" fill="#ede7f6" stroke="#512da8" stroke-width="2" filter="url(#s)"/>
+  <text x="350" y="110" text-anchor="middle" fill="#311b92" font-size="16" font-weight="700">Capa de Entrada</text>
+
+  <rect x="280" y="240" width="140" height="180" rx="6" fill="#fff" stroke="#512da8" stroke-width="1.5"/>
+  <text x="350" y="265" text-anchor="middle" fill="#512da8" font-size="14" font-weight="700">MCP Gateway</text>
+  <text x="350" y="285" text-anchor="middle" fill="#546e7a" font-size="10">Node.js/Express</text>
+  
+  <rect x="290" y="310" width="120" height="25" rx="4" fill="#ffcc80"/>
+  <text x="350" y="326" text-anchor="middle" fill="#e65100" font-size="10">OAuth 2.1 Auth</text>
+  
+  <rect x="290" y="345" width="120" height="25" rx="4" fill="#a5d6a7"/>
+  <text x="350" y="361" text-anchor="middle" fill="#1b5e20" font-size="10">Rate Limiting</text>
+
+  <rect x="290" y="380" width="120" height="25" rx="4" fill="#ce93d8"/>
+  <text x="350" y="396" text-anchor="middle" fill="#4a148c" font-size="10">Aggregator Routing</text>
+
+  <!-- SERVERS LAYER -->
+  <line x1="420" y1="300" x2="520" y2="180" stroke="#4caf50" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="420" y1="330" x2="520" y2="330" stroke="#4caf50" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="420" y1="360" x2="520" y2="480" stroke="#4caf50" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="520" y="80" width="240" height="480" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <text x="640" y="110" text-anchor="middle" fill="#1b5e20" font-size="16" font-weight="700">Capa de Servicios (MCP)</text>
+
+  <!-- Server 1 -->
+  <rect x="540" y="140" width="200" height="100" rx="6" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="640" y="165" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Data Server (Python)</text>
+  <text x="640" y="185" text-anchor="middle" fill="#546e7a" font-size="10">FastMCP</text>
+  <rect x="550" y="200" width="180" height="30" rx="4" fill="#c8e6c9"/>
+  <text x="640" y="218" text-anchor="middle" fill="#1b5e20" font-size="10">DB Queries & Resources</text>
+
+  <!-- Server 2 -->
+  <rect x="540" y="280" width="200" height="100" rx="6" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="640" y="305" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Compute Server (TS)</text>
+  <text x="640" y="325" text-anchor="middle" fill="#546e7a" font-size="10">@mcp/sdk</text>
+  <rect x="550" y="340" width="180" height="30" rx="4" fill="#c8e6c9"/>
+  <text x="640" y="358" text-anchor="middle" fill="#1b5e20" font-size="10">Tools: Calc, Analítica</text>
+
+  <!-- Server 3 -->
+  <rect x="540" y="420" width="200" height="100" rx="6" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="640" y="445" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Comms Server (TS)</text>
+  <text x="640" y="465" text-anchor="middle" fill="#546e7a" font-size="10">@mcp/sdk</text>
+  <rect x="550" y="480" width="180" height="30" rx="4" fill="#c8e6c9"/>
+  <text x="640" y="498" text-anchor="middle" fill="#1b5e20" font-size="10">Slack/Email Integration</text>
+</svg>

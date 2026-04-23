@@ -1,5 +1,7 @@
 # Subtema 12.1.1: Especificaciones del Proyecto Final: "Ecosistema de Operaciones Inteligentes"
 
+![Arquitectura Proyecto Final](../../../diagramas/modulo_12/arquitectura_proyecto_final.svg)
+
 Bienvenidos al desafío final. Aquí demostrarás que dominas el Protocolo de Contexto de Modelo (MCP) construyendo un sistema completo.
 
 ## El Escenario
@@ -32,3 +34,4 @@ Debes implementar **3 Servidores MCP** y **1 Cliente/Host**:
 - **Seguridad:** El servidor `monitor` debe requerir confirmación para `restart_service`.
 - **Logging:** Todos las llamadas a herramientas deben quedar registradas.
 - **Docker:** Todo el sistema debe levantarse con un solo `docker-compose up`.
+

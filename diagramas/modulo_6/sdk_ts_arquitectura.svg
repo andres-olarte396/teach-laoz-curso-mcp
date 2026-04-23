@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0288d1"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">TypeScript SDK: McpServer vs Server</text>
+
+  <!-- Left Side: McpServer (High Level) -->
+  <rect x="40" y="80" width="340" height="360" rx="12" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="80" width="340" height="36" rx="12" fill="#4caf50"/>
+  <rect x="40" y="100" width="340" height="16" fill="#4caf50"/>
+  <text x="210" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">McpServer (Alto Nivel)</text>
+
+  <rect x="60" y="140" width="300" height="40" rx="8" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="210" y="165" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="600">Gestión de Estado y Capabilities Automática</text>
+
+  <rect x="60" y="195" width="300" height="70" rx="8" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="75" y="220" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">server.tool("nombre", shape, async (args) => {</text>
+  <text x="75" y="240" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">  return { content: [...] };</text>
+  <text x="75" y="260" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">});</text>
+  
+  <rect x="60" y="280" width="300" height="70" rx="8" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="75" y="305" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">server.resource("nombre", uri, async () => {</text>
+  <text x="75" y="325" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">  return { contents: [...] };</text>
+  <text x="75" y="345" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">});</text>
+
+  <text x="210" y="380" text-anchor="middle" fill="#2e7d32" font-size="11">✓ Ideal para 90% de los casos</text>
+  <text x="210" y="400" text-anchor="middle" fill="#2e7d32" font-size="11">✓ Validación Zod integrada</text>
+  <text x="210" y="420" text-anchor="middle" fill="#2e7d32" font-size="11">✓ Fácil de mantener</text>
+
+  <!-- Right Side: Server (Low Level) -->
+  <rect x="420" y="80" width="340" height="360" rx="12" fill="#fff3e0" stroke="#ff9800" stroke-width="2" filter="url(#s)"/>
+  <rect x="420" y="80" width="340" height="36" rx="12" fill="#ff9800"/>
+  <rect x="420" y="100" width="340" height="16" fill="#ff9800"/>
+  <text x="590" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Server (Bajo Nivel)</text>
+
+  <rect x="440" y="140" width="300" height="40" rx="8" fill="#fff" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="590" y="165" text-anchor="middle" fill="#e65100" font-size="12" font-weight="600">Control Total, Handlers Manuales</text>
+
+  <rect x="440" y="195" width="300" height="90" rx="8" fill="#fff" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="455" y="215" fill="#e65100" font-size="11" font-family="Consolas,monospace">server.setRequestHandler(</text>
+  <text x="455" y="235" fill="#e65100" font-size="11" font-family="Consolas,monospace">  ListToolsRequestSchema,</text>
+  <text x="455" y="255" fill="#e65100" font-size="11" font-family="Consolas,monospace">  async () => { return { tools: [...] } }</text>
+  <text x="455" y="275" fill="#e65100" font-size="11" font-family="Consolas,monospace">);</text>
+
+  <rect x="440" y="300" width="300" height="50" rx="8" fill="#fff" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="455" y="320" fill="#e65100" font-size="11" font-family="Consolas,monospace">server.sendNotification(...)</text>
+  <text x="455" y="340" fill="#e65100" font-size="11" font-family="Consolas,monospace">server.request(...)</text>
+
+  <text x="590" y="380" text-anchor="middle" fill="#e65100" font-size="11">✓ Para patrones custom (ej. Gateways)</text>
+  <text x="590" y="400" text-anchor="middle" fill="#e65100" font-size="11">✓ Validación manual requerida</text>
+  <text x="590" y="420" text-anchor="middle" fill="#e65100" font-size="11">✓ Acceso a todos los tipos de mensajes</text>
+</svg>

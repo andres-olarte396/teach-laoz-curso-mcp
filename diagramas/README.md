@@ -61,6 +61,55 @@ Este directorio contiene todos los diagramas SVG e ilustraciones del curso "Mode
 | [Elicitation](modulo_5/elicitation_formularios.svg) | Formularios dinámicos con tipos y validaciones        | subtema_5.3.1   |
 | [Logging y Progreso](modulo_5/logging_progreso.svg) | Niveles de log y reporte de progreso                  | subtema_5.4.1-2 |
 
+### Módulo 6: SDK de TypeScript
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [McpServer vs Server](modulo_6/sdk_ts_arquitectura.svg) | Comparativa API alto vs bajo nivel | subtema_6.1.2 |
+| [Integración Express/Hono](modulo_6/integracion_express_hono.svg) | Servidor MCP como middleware HTTP | subtema_6.2.3 |
+| [Cliente Multi-Servidor](modulo_6/cliente_multiservidor.svg) | Arquitectura de cliente consumiendo N servidores | subtema_6.3.3 |
+| [Estrategias Testing](modulo_6/estrategias_testing_ts.svg) | InMemoryTransport vs E2E con stdio | subtema_6.4.2 |
+
+### Módulo 7: SDK de Python para MCP
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [Decoradores FastMCP](modulo_7/fastmcp_decoradores.svg) | Generación automática de JSON Schema con Pydantic | subtema_7.1.2 |
+| [Lifespan y Context](modulo_7/lifespan_context.svg) | Ciclo de vida y objeto Context inyectado | subtema_7.2.1 |
+| [Composición de Servidores](modulo_7/composicion_servidores.svg) | Patrones mount() e import_server() | subtema_7.2.3 |
+
+### Módulo 8: Integraciones y Hosts
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [Claude Desktop Config](modulo_8/claude_desktop_config.svg) | Configuración de servidores y proceso host | subtema_8.1.1 |
+| [Frameworks de Agentes](modulo_8/frameworks_agentes.svg) | Integración LangChain/LangGraph con MCP Tools | subtema_8.3.1 |
+
+### Módulo 9: Seguridad y Autorización
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [Superficie de Ataque](modulo_9/superficie_ataque.svg) | Vectores de amenaza en la arquitectura MCP | subtema_9.1.1 |
+| [Flujo OAuth 2.1](modulo_9/oauth2_flujo.svg) | Secuencia OAuth adaptada al protocolo | subtema_9.2.1 |
+| [Tool Poisoning](modulo_9/tool_poisoning.svg) | Riesgos de descripciones maliciosas | subtema_9.1.2 |
+
+### Módulo 10: Arquitecturas Multi-Servidor
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [Patrón Aggregator](modulo_10/patron_aggregator.svg) | Cliente inteligente enrutando a múltiples servidores | subtema_10.1.1 |
+| [Patrón Gateway](modulo_10/patron_gateway.svg) | Proxy central con políticas y rate limiting | subtema_10.1.2 |
+| [Patrón Federation](modulo_10/patron_federation.svg) | Servidor que actúa como cliente internamente | subtema_10.1.3 |
+
+### Módulos 11 y 12: Producción y Proyecto Final
+
+| Diagrama | Descripción | Se usa en |
+|:---|:---|:---|
+| [Observabilidad MCP](modulo_11/observabilidad_mcp.svg) | Flujo de métricas, logs y dashboards | subtema_11.1.1 |
+| [Stateless vs Stateful](modulo_11/escalabilidad_stateless_stateful.svg) | Comparativa de escalabilidad (stdio/HTTP vs SSE) | subtema_11.2.1 |
+| [Despliegue K8s](modulo_11/despliegue_k8s.svg) | Arquitectura Kubernetes con Ingress y HPA | subtema_11.2.2 |
+| [Arquitectura Proyecto](modulo_12/arquitectura_proyecto_final.svg) | Diseño completo del ecosistema final | módulo 12 |
+
 ## Paleta de Colores
 
 | Color       | Hex                   | Uso                         |

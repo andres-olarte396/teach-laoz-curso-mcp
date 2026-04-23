@@ -1,5 +1,7 @@
 # Subtema 10.1.1: Patrón Aggregator: Un Cliente, Múltiples Servidores
 
+![Patrón Aggregator](../../../diagramas/modulo_10/patron_aggregator.svg)
+
 Este es el patrón más simple y común. El Host (ej: Claude Desktop) actúa como un **Aggregator**.
 
 ## Funcionamiento
@@ -26,3 +28,4 @@ await Promise.all(servers.map((s) => aggregator.connect(s)));
 const allTools = aggregator.listTools();
 // [ {name: "toolA", ...}, {name: "toolB", ...} ]
 ```
+

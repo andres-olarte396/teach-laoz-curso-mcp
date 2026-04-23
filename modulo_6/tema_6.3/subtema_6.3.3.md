@@ -1,5 +1,7 @@
 # Subtema 6.3.3: Cliente Multi-Servidor: Conexión Simultánea
 
+![Cliente Multi-Servidor](../../../diagramas/modulo_6/cliente_multiservidor.svg)
+
 Un Host real (como Claude Desktop) no se conecta a un solo servidor; se conecta a **muchos**.
 
 ## Patrón de Agregación
@@ -43,3 +45,4 @@ class MultiServerClient {
 
 1.  **Colisión de Nombres:** ¿Qué pasa si dos servidores tienen una herramienta llamada `read_file`? (Solución: Namespacing visual o prefijos).
 2.  **Ciclo de Vida:** Si un servidor crashea, no debe tirar abajo todo el Host.
+

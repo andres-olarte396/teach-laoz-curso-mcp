@@ -1,5 +1,7 @@
 # Subtema 9.2.1: El Framework de Autorización MCP: OAuth 2.1
 
+![Flujo OAuth 2.1](../../../diagramas/modulo_9/oauth2_flujo.svg)
+
 Para conectarse a **servidores remotos** sobre HTTP, MCP estandariza el uso de **OAuth 2.1**.
 
 ## Roles
@@ -19,3 +21,4 @@ Para conectarse a **servidores remotos** sobre HTTP, MCP estandariza el uso de *
 5.  **MCP Connection:** El Cliente abre la conexión SSE enviando el token en el header `Authorization: Bearer <token>`.
 
 Esto evita que el usuario tenga que copiar y pegar API Keys manualmente.
+

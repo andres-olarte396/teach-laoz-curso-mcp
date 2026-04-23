@@ -1,5 +1,7 @@
 # Subtema 7.2.1: Lifespan: Gestión de Recursos del Servidor
 
+![Lifespan y Context](../../../diagramas/modulo_7/lifespan_context.svg)
+
 Cuando tu servidor arranca, a menudo necesitas conectar a una base de datos o cargar un modelo de ML. No quieres hacer esto en cada llamada a una tool.
 
 FastMCP usa el patrón `lifespan` (context manager) para esto.
@@ -11,6 +13,8 @@ from fastmcp import FastMCP
 from contextlib import asynccontextmanager
 
 # Estado global (o mejor, inyectado)
+
+![Lifespan y Context](../../../diagramas/modulo_7/lifespan_context.svg)
 db_pool = {}
 
 @asynccontextmanager
@@ -35,3 +39,4 @@ def query_db() -> str:
 ```
 
 Esto garantiza una limpieza correcta de recursos cuando el servidor se detiene (ej: cuando cierras Claude Desktop).
+

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0277bd"/><stop offset="100%" stop-color="#0097a7"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0097a7"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Observabilidad en Servidores MCP</text>
+
+  <!-- MCP Server -->
+  <rect x="40" y="100" width="280" height="320" rx="12" fill="#fff" stroke="#0277bd" stroke-width="2.5" filter="url(#s)"/>
+  <rect x="40" y="100" width="280" height="36" rx="12" fill="#0277bd"/>
+  <rect x="40" y="120" width="280" height="16" fill="#0277bd"/>
+  <text x="180" y="124" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Servidor MCP (Producción)</text>
+
+  <rect x="60" y="160" width="240" height="60" rx="6" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="180" y="180" text-anchor="middle" fill="#01579b" font-size="12" font-weight="700">Logging Estructurado</text>
+  <text x="180" y="195" text-anchor="middle" fill="#0288d1" font-size="10" font-family="Consolas,monospace">{"level":"info","tool":"fs_read"}</text>
+  <text x="180" y="210" text-anchor="middle" fill="#0288d1" font-size="10" font-family="Consolas,monospace">{"trace_id":"xyz123","duration":15}</text>
+
+  <rect x="60" y="240" width="240" height="60" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="180" y="260" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Métricas (Prometheus)</text>
+  <text x="180" y="275" text-anchor="middle" fill="#388e3c" font-size="10" font-family="Consolas,monospace">mcp_tool_duration_seconds</text>
+  <text x="180" y="290" text-anchor="middle" fill="#388e3c" font-size="10" font-family="Consolas,monospace">mcp_errors_total{code="400"}</text>
+
+  <rect x="60" y="320" width="240" height="80" rx="6" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="180" y="340" text-anchor="middle" fill="#7b1fa2" font-size="12" font-weight="700">Notificaciones MCP al Host</text>
+  <text x="180" y="360" text-anchor="middle" fill="#8e24aa" font-size="10">notifications/message/info</text>
+  <text x="180" y="375" text-anchor="middle" fill="#8e24aa" font-size="10">notifications/progress</text>
+
+  <!-- External Systems -->
+  <!-- Logs to ELK/Datadog -->
+  <line x1="320" y1="190" x2="480" y2="150" stroke="#0288d1" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="480" y="110" width="280" height="80" rx="8" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <text x="620" y="140" text-anchor="middle" fill="#01579b" font-size="14" font-weight="700">Plataforma de Logs</text>
+  <text x="620" y="160" text-anchor="middle" fill="#0288d1" font-size="11">ELK Stack / Datadog / CloudWatch</text>
+  <text x="620" y="175" text-anchor="middle" fill="#0288d1" font-size="10">Búsqueda y trazabilidad de errores</text>
+
+  <!-- Metrics to Prometheus/Grafana -->
+  <line x1="320" y1="270" x2="480" y2="270" stroke="#4caf50" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="480" y="230" width="280" height="80" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <text x="620" y="260" text-anchor="middle" fill="#2e7d32" font-size="14" font-weight="700">Monitorización (Dashboards)</text>
+  <text x="620" y="280" text-anchor="middle" fill="#388e3c" font-size="11">Prometheus + Grafana</text>
+  <text x="620" y="295" text-anchor="middle" fill="#388e3c" font-size="10">Alertas en SLIs (Latencia p99, Tasa de error)</text>
+
+  <!-- Notifs to MCP Client -->
+  <line x1="320" y1="360" x2="480" y2="390" stroke="#9c27b0" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="480" y="350" width="280" height="80" rx="8" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" filter="url(#s)"/>
+  <text x="620" y="380" text-anchor="middle" fill="#7b1fa2" font-size="14" font-weight="700">MCP Client (Host)</text>
+  <text x="620" y="400" text-anchor="middle" fill="#8e24aa" font-size="11">Claude Desktop UI</text>
+  <text x="620" y="415" text-anchor="middle" fill="#8e24aa" font-size="10">Muestra progreso e info al usuario final</text>
+
+</svg>

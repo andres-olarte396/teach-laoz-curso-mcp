@@ -1,5 +1,7 @@
 # Subtema 9.1.1: Superficie de Ataque: Host, Client y Server
 
+![Superficie de Ataque](../../../diagramas/modulo_9/superficie_ataque.svg)
+
 MCP conecta sistemas locales con LLMs remotos y servicios externos. Esto crea una superficie de ataque única.
 
 ## Componentes Vulnerables
@@ -14,3 +16,4 @@ MCP conecta sistemas locales con LLMs remotos y servicios externos. Esto crea un
 > **"Trata a cada Servidor MCP como si fuera código no confiable descargado de Internet."**
 
 Nunca conectes un servidor de terceros sin auditarlo, especialmente si tiene herramientas con efectos secundarios (`destructive`).
+

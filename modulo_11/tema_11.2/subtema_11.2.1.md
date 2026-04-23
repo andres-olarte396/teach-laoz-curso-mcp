@@ -1,5 +1,7 @@
 # Subtema 11.2.1: Stateless vs Stateful
 
+![Stateless vs Stateful](../../../diagramas/modulo_11/escalabilidad_stateless_stateful.svg)
+
 La decisión de arquitectura más importante.
 
 ## Stateless (Recomendado)
@@ -17,3 +19,4 @@ El servidor mantiene contexto (ej: conexión a una sesión de navegador Puppetee
 - **Solución:** Externalizar el estado (Redis, Database) para volver a ser Stateless.
 
 > **Consejo:** Diseña tus servidores MCP para ser Stateless siempre que sea posible.
+

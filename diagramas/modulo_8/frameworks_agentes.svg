@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0277bd"/><stop offset="100%" stop-color="#039be5"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#039be5"/></marker>
+    <marker id="ag" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4caf50"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Integración con Frameworks de Agentes (LangChain)</text>
+
+  <!-- LangChain Agent -->
+  <rect x="40" y="80" width="300" height="360" rx="12" fill="#fff" stroke="#0277bd" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="80" width="300" height="36" rx="12" fill="#0277bd"/>
+  <rect x="40" y="100" width="300" height="16" fill="#0277bd"/>
+  <text x="190" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Agente LangChain</text>
+
+  <rect x="60" y="140" width="260" height="60" rx="6" fill="#e1f5fe" stroke="#039be5" stroke-width="1.5"/>
+  <text x="190" y="165" text-anchor="middle" fill="#01579b" font-size="14" font-weight="700">LLM Node</text>
+  <text x="190" y="185" text-anchor="middle" fill="#0277bd" font-size="11">Decide qué herramienta usar</text>
+
+  <rect x="60" y="240" width="260" height="180" rx="6" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="190" y="265" text-anchor="middle" fill="#7b1fa2" font-size="14" font-weight="700">ToolNode (LangChain Tools)</text>
+  
+  <rect x="80" y="280" width="220" height="30" rx="4" fill="#fff"/>
+  <text x="190" y="300" text-anchor="middle" fill="#7b1fa2" font-size="11" font-weight="600">lc_tool_1 (Python/Local)</text>
+
+  <rect x="80" y="320" width="220" height="30" rx="4" fill="#fff"/>
+  <text x="190" y="340" text-anchor="middle" fill="#7b1fa2" font-size="11" font-weight="600">lc_tool_2 (API)</text>
+
+  <rect x="80" y="370" width="220" height="30" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="190" y="390" text-anchor="middle" fill="#e65100" font-size="11" font-weight="700">mcp_mapped_tool_fs_read</text>
+
+  <line x1="190" y1="200" x2="190" y2="240" stroke="#0277bd" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- Bridge -->
+  <line x1="340" y1="385" x2="480" y2="385" stroke="#ff9800" stroke-width="2.5" marker-end="url(#ag)"/>
+  <text x="410" y="375" text-anchor="middle" fill="#e65100" font-size="11" font-weight="600">MCP Toolkit Wrapper</text>
+  <text x="410" y="405" text-anchor="middle" fill="#e65100" font-size="9">Convierte LangChain ToolCall a MCP tools/call</text>
+
+  <!-- MCP Server -->
+  <rect x="480" y="220" width="280" height="220" rx="12" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="480" y="220" width="280" height="36" rx="12" fill="#4caf50"/>
+  <rect x="480" y="240" width="280" height="16" fill="#4caf50"/>
+  <text x="620" y="244" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Servidor MCP</text>
+
+  <rect x="500" y="280" width="240" height="60" rx="6" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="620" y="305" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">fs_read</text>
+  <text x="620" y="325" text-anchor="middle" fill="#2e7d32" font-size="10">Ejecuta la acción y devuelve JSON-RPC Result</text>
+
+  <!-- Arrow back -->
+  <path d="M 500 310 Q 410 310 300 295" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="4" marker-end="url(#ag)"/>
+  <text x="410" y="300" text-anchor="middle" fill="#2e7d32" font-size="10">Result mapeado a LangChain format</text>
+
+</svg>

@@ -1,5 +1,7 @@
 # Subtema 11.1.1: Logging Estructurado
 
+![Observabilidad MCP](../../../diagramas/modulo_11/observabilidad_mcp.svg)
+
 En producción, `console.log` no es suficiente. Necesitas logs que una máquina pueda indexar.
 
 ## JSON Logs
@@ -21,3 +23,4 @@ Configura tu logger (Winster en Node, structlog en Python) para emitir JSON.
 ## Correlation IDs
 
 El objeto `requestContext` de MCP (y `RequestHeaderExtra` en TS) suele proveer un ID de petición. Pásalo en todos tus logs para trazar una operación desde el Host hasta la base de datos.
+

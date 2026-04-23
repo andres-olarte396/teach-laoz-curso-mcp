@@ -1,5 +1,7 @@
 # Subtema 11.2.2: Docker y Kubernetes
 
+![Despliegue K8s](../../../diagramas/modulo_11/despliegue_k8s.svg)
+
 Desplegar servidores MCP en contenedores es el estándar.
 
 ## Dockerfile Ejemplo (Python uv)
@@ -15,6 +17,8 @@ RUN uv sync --frozen --no-install-project
 COPY . .
 
 # Exponer el puerto SSE
+
+![Despliegue K8s](../../../diagramas/modulo_11/despliegue_k8s.svg)
 EXPOSE 8000
 CMD ["uv", "run", "main.py", "--transport", "sse", "--port", "8000"]
 ```
@@ -23,3 +27,4 @@ CMD ["uv", "run", "main.py", "--transport", "sse", "--port", "8000"]
 
 Define un `Deployment` con 3 réplicas y un `Service` que exponga el puerto 8000.
 Importante: Configura `readinessProbe` apuntando a tu endpoint de salud (si lo tienes) o verificando que el puerto TCP responde.
+

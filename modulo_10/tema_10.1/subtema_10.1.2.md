@@ -1,5 +1,7 @@
 # Subtema 10.1.2: Enrutamiento y Resolución de Conflictos
 
+![Patrón Gateway](../../../diagramas/modulo_10/patron_gateway.svg)
+
 Cuando conectas múltiples servidores, surge un problema: ¿Qué pasa si dos servidores tienen una herramienta llamada `search`?
 
 ## Estrategias de Namespacing
@@ -25,3 +27,4 @@ Los prompts también se agregan.
 - `sales/pitch-draft`
 
 El usuario (o el LLM) selecciona explícitamente qué prompt usar, por lo que las colisiones son menos problemáticas que en las tools automáticas.
+

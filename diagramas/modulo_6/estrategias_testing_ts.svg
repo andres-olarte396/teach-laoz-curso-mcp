@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0288d1"/></marker>
+    <marker id="ag" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4caf50"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Testing MCP en TypeScript</text>
+
+  <!-- Left Side: Unit Testing (InMemoryTransport) -->
+  <rect x="40" y="80" width="340" height="360" rx="12" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="80" width="340" height="36" rx="12" fill="#0288d1"/>
+  <rect x="40" y="100" width="340" height="16" fill="#0288d1"/>
+  <text x="210" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Testing Unitario (Mocking)</text>
+
+  <text x="210" y="140" text-anchor="middle" fill="#01579b" font-size="12" font-weight="600">InMemoryTransport</text>
+
+  <!-- Client/Server mock setup -->
+  <rect x="60" y="160" width="300" height="140" rx="8" fill="#fff" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="75" y="185" fill="#0288d1" font-size="11" font-family="Consolas,monospace">const [clientTransport, serverTransport] =</text>
+  <text x="75" y="205" fill="#0288d1" font-size="11" font-family="Consolas,monospace">  InMemoryTransport.createLinkedPair();</text>
+  
+  <text x="75" y="235" fill="#0288d1" font-size="11" font-family="Consolas,monospace">await mcpServer.connect(serverTransport);</text>
+  <text x="75" y="255" fill="#0288d1" font-size="11" font-family="Consolas,monospace">await mcpClient.connect(clientTransport);</text>
+
+  <rect x="60" y="320" width="300" height="100" rx="8" fill="#fff" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="75" y="340" fill="#0288d1" font-size="11" font-family="Consolas,monospace">const result = await mcpClient.callTool(</text>
+  <text x="75" y="360" fill="#0288d1" font-size="11" font-family="Consolas,monospace">  { name: "test_tool", arguments: {} }</text>
+  <text x="75" y="380" fill="#0288d1" font-size="11" font-family="Consolas,monospace">);</text>
+  <text x="75" y="400" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">expect(result.content[0].text).toBe("OK");</text>
+
+  <!-- Right Side: E2E Testing -->
+  <rect x="420" y="80" width="340" height="360" rx="12" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="420" y="80" width="340" height="36" rx="12" fill="#4caf50"/>
+  <rect x="420" y="100" width="340" height="16" fill="#4caf50"/>
+  <text x="590" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Testing de Integración (E2E)</text>
+
+  <text x="590" y="140" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="600">Procesos Reales con stdio</text>
+
+  <!-- Subprocess setup -->
+  <rect x="440" y="160" width="300" height="140" rx="8" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="455" y="185" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">const transport = new StdioClientTransport({</text>
+  <text x="455" y="205" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">  command: "node",</text>
+  <text x="455" y="225" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">  args: ["dist/server.js"],</text>
+  <text x="455" y="245" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">});</text>
+  <text x="455" y="275" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">await client.connect(transport);</text>
+
+  <rect x="440" y="320" width="300" height="100" rx="8" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="455" y="340" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">// Test lifecycle, timeouts, crash recovery</text>
+  <text x="455" y="360" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">await client.ping();</text>
+  <text x="455" y="380" fill="#c62828" font-size="11" font-family="Consolas,monospace">// Important: cleanup</text>
+  <text x="455" y="400" fill="#2e7d32" font-size="11" font-family="Consolas,monospace">await transport.close();</text>
+</svg>

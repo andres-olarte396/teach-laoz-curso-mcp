@@ -1,5 +1,7 @@
 # Subtema 10.1.3: Patrón Gateway: Unificación de Endpoints
 
+![Patrón Federation](../../../diagramas/modulo_10/patron_federation.svg)
+
 A veces no quieres que el Cliente sepa que existen N servidores. Quieres exponer un **único endpoint SSE**.
 
 ## Arquitectura
@@ -18,3 +20,4 @@ El Gateway es a la vez un **Servidor** (hacia el Cliente) y un **Cliente** (haci
 6.  Devuelve la respuesta.
 
 Esto abstrae la complejidad y permite cambiar backends sin reconfigurar a los clientes.
+

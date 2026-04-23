@@ -1,5 +1,7 @@
 # Subtema 9.1.2: Tool Poisoning y Exfiltración de Datos
 
+![Tool Poisoning](../../../diagramas/modulo_9/tool_poisoning.svg)
+
 Un servidor malicioso no necesita "hackear" tu ordenador técnicamente; solo necesita engañar al LLM.
 
 ## El Ataque
@@ -20,3 +22,4 @@ El LLM, queriendo ser útil y seguir instrucciones, podría leer el historial (q
 
 1.  **Consentimiento Explícito (Human-in-the-Loop):** El Host debe preguntar antes de enviar datos a herramientas desconocidas.
 2.  **Aislamiento de Contexto:** No permitir que las herramientas lean el historial completo a menos que sea necesario.
+

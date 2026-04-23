@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1565c0"/><stop offset="100%" stop-color="#42a5f5"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1565c0"/></marker>
+  </defs>
+  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Python SDK: FastMCP y Decoradores</text>
+
+  <!-- Python Code Side -->
+  <rect x="40" y="80" width="340" height="360" rx="12" fill="#282c34" stroke="#61dafb" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="80" width="340" height="36" rx="12" fill="#21252b"/>
+  <rect x="40" y="100" width="340" height="16" fill="#21252b"/>
+  <text x="210" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">Código Python (FastMCP)</text>
+
+  <!-- Decorator Code -->
+  <text x="60" y="150" fill="#c678dd" font-size="13" font-family="Consolas,monospace">@mcp.tool()</text>
+  <text x="60" y="170" fill="#c678dd" font-size="13" font-family="Consolas,monospace">def <tspan fill="#61dafb">get_weather</tspan>(</text>
+  <text x="80" y="190" fill="#e06c75" font-size="13" font-family="Consolas,monospace">city</text><text fill="#abb2bf" font-size="13" font-family="Consolas,monospace">: </text><text fill="#e5c07b" font-size="13" font-family="Consolas,monospace">str</text><text fill="#abb2bf" font-size="13" font-family="Consolas,monospace">,</text>
+  <text x="80" y="210" fill="#e06c75" font-size="13" font-family="Consolas,monospace">days</text><text fill="#abb2bf" font-size="13" font-family="Consolas,monospace">: </text><text fill="#e5c07b" font-size="13" font-family="Consolas,monospace">int</text><text fill="#abb2bf" font-size="13" font-family="Consolas,monospace"> = </text><text fill="#d19a66" font-size="13" font-family="Consolas,monospace">3</text>
+  <text x="60" y="230" fill="#abb2bf" font-size="13" font-family="Consolas,monospace">) -> </text><text fill="#e5c07b" font-size="13" font-family="Consolas,monospace">str</text><text fill="#abb2bf" font-size="13" font-family="Consolas,monospace">:</text>
+  <text x="80" y="250" fill="#98c379" font-size="13" font-family="Consolas,monospace">"""</text>
+  <text x="80" y="270" fill="#98c379" font-size="13" font-family="Consolas,monospace">Obtiene el clima para una ciudad.</text>
+  <text x="80" y="290" fill="#98c379" font-size="13" font-family="Consolas,monospace">"""</text>
+  <text x="80" y="310" fill="#c678dd" font-size="13" font-family="Consolas,monospace">return </text><text fill="#98c379" font-size="13" font-family="Consolas,monospace">f"Clima en {city}..."</text>
+
+  <rect x="60" y="350" width="300" height="70" rx="6" fill="#3e4451"/>
+  <text x="75" y="375" fill="#abb2bf" font-size="12">1. Pydantic analiza type hints automáticamente</text>
+  <text x="75" y="395" fill="#abb2bf" font-size="12">2. El docstring se convierte en description</text>
+
+  <!-- Pydantic Magic Arrow -->
+  <line x1="380" y1="210" x2="420" y2="210" stroke="#1565c0" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="400" y="200" text-anchor="middle" fill="#1565c0" font-size="11" font-weight="700">Magia Pydantic</text>
+
+  <!-- Resulting JSON Schema Side -->
+  <rect x="420" y="80" width="340" height="360" rx="12" fill="#fff" stroke="#ffb300" stroke-width="2" filter="url(#s)"/>
+  <rect x="420" y="80" width="340" height="36" rx="12" fill="#ffb300"/>
+  <rect x="420" y="100" width="340" height="16" fill="#ffb300"/>
+  <text x="590" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">JSON Schema Resultante</text>
+
+  <text x="440" y="150" fill="#263238" font-size="12" font-family="Consolas,monospace">{</text>
+  <text x="460" y="170" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"name"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: </text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"get_weather"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">,</text>
+  <text x="460" y="190" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"description"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: </text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"Obtiene el clima..."</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">,</text>
+  <text x="460" y="210" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"inputSchema"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: {</text>
+  <text x="480" y="230" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"type"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: </text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"object"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">,</text>
+  <text x="480" y="250" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"properties"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: {</text>
+  <text x="500" y="270" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"city"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: { </text><text fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"type"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: </text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"string"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace"> },</text>
+  <text x="500" y="290" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"days"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: { </text><text fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"type"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: </text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"integer"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace"> }</text>
+  <text x="480" y="310" fill="#263238" font-size="12" font-family="Consolas,monospace">},</text>
+  <text x="480" y="330" fill="#d32f2f" font-size="12" font-family="Consolas,monospace">"required"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">: [</text><text fill="#388e3c" font-size="12" font-family="Consolas,monospace">"city"</text><text fill="#263238" font-size="12" font-family="Consolas,monospace">]</text>
+  <text x="460" y="350" fill="#263238" font-size="12" font-family="Consolas,monospace">}</text>
+  <text x="440" y="370" fill="#263238" font-size="12" font-family="Consolas,monospace">}</text>
+</svg>

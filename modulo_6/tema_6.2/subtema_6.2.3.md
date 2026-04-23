@@ -1,5 +1,7 @@
 # Subtema 6.2.3: Integración con Frameworks Web: Express y Hono
 
+![Integración Express/Hono](../../../diagramas/modulo_6/integracion_express_hono.svg)
+
 Para producción, probablemente quieras exponer tu servidor MCP sobre **HTTP con SSE**, y quizás compartir puerto con una API REST existente.
 
 ## Ejemplo con Express
@@ -40,3 +42,4 @@ app.listen(3000, () => console.log("SSE en http://localhost:3000/sse"));
 ```
 
 > **Recomendación:** Para SSE, usar **Hono** o **FastAPI** (Python) es mucho más sencillo que Express debido a su manejo nativo de Streams estándar.
+
