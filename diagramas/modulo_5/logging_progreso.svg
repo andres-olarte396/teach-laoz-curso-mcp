@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Logging y Progreso en MCP</text>
+
+  <!-- Logging Section -->
+  <rect x="30" y="80" width="360" height="270" rx="10" fill="#fff" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="30" y="80" width="360" height="30" rx="10" fill="#0288d1"/>
+  <rect x="30" y="96" width="360" height="14" fill="#0288d1"/>
+  <text x="210" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Logging: notifications/message</text>
+
+  <text x="50" y="130" fill="#263238" font-size="11" font-weight="600">Niveles de log:</text>
+  <rect x="50" y="140" width="80" height="22" rx="4" fill="#e8eaf6"/><text x="90" y="156" text-anchor="middle" fill="#3f51b5" font-size="10">debug</text>
+  <rect x="140" y="140" width="80" height="22" rx="4" fill="#e1f5fe"/><text x="180" y="156" text-anchor="middle" fill="#0288d1" font-size="10">info</text>
+  <rect x="230" y="140" width="80" height="22" rx="4" fill="#fff3e0"/><text x="270" y="156" text-anchor="middle" fill="#ff9800" font-size="10">warning</text>
+  <rect x="50" y="168" width="80" height="22" rx="4" fill="#ffebee"/><text x="90" y="184" text-anchor="middle" fill="#f44336" font-size="10">error</text>
+  <rect x="140" y="168" width="80" height="22" rx="4" fill="#fce4ec"/><text x="180" y="184" text-anchor="middle" fill="#c62828" font-size="10">critical</text>
+
+  <text x="50" y="215" fill="#263238" font-size="11" font-weight="600">Ejemplo:</text>
+  <rect x="50" y="224" width="320" height="100" rx="6" fill="#263238"/>
+  <text x="60" y="244" fill="#4fc3f7" font-size="10" font-family="Consolas,monospace">{</text>
+  <text x="70" y="260" fill="#4caf50" font-size="9" font-family="Consolas,monospace">"method": "notifications/message",</text>
+  <text x="70" y="276" fill="#4caf50" font-size="9" font-family="Consolas,monospace">"params": {</text>
+  <text x="85" y="292" fill="#ff9800" font-size="9" font-family="Consolas,monospace">"level": "info",</text>
+  <text x="85" y="308" fill="#ff9800" font-size="9" font-family="Consolas,monospace">"data": "Query OK: 42 rows"</text>
+  <text x="60" y="320" fill="#4fc3f7" font-size="9" font-family="Consolas,monospace">}}</text>
+
+  <!-- Progress Section -->
+  <rect x="410" y="80" width="360" height="270" rx="10" fill="#fff" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="410" y="80" width="360" height="30" rx="10" fill="#4caf50"/>
+  <rect x="410" y="96" width="360" height="14" fill="#4caf50"/>
+  <text x="590" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Progreso: notifications/progress</text>
+
+  <text x="430" y="130" fill="#263238" font-size="11" font-weight="600">Vinculado a una solicitud via progressToken</text>
+
+  <!-- Progress bar visual -->
+  <text x="430" y="158" fill="#263238" font-size="10">Procesando archivos...</text>
+  <rect x="430" y="165" width="320" height="16" rx="8" fill="#e0e0e0"/>
+  <rect x="430" y="165" width="224" height="16" rx="8" fill="#4caf50"/>
+  <text x="590" y="177" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">70%</text>
+  <text x="430" y="198" fill="#546e7a" font-size="10">progress: 70, total: 100</text>
+
+  <text x="430" y="228" fill="#263238" font-size="11" font-weight="600">Ejemplo:</text>
+  <rect x="430" y="236" width="320" height="90" rx="6" fill="#263238"/>
+  <text x="440" y="256" fill="#4fc3f7" font-size="10" font-family="Consolas,monospace">{</text>
+  <text x="450" y="272" fill="#4caf50" font-size="9" font-family="Consolas,monospace">"method": "notifications/progress",</text>
+  <text x="450" y="288" fill="#4caf50" font-size="9" font-family="Consolas,monospace">"params": {</text>
+  <text x="465" y="304" fill="#ff9800" font-size="9" font-family="Consolas,monospace">"progressToken": "req_1",</text>
+  <text x="465" y="318" fill="#ff9800" font-size="9" font-family="Consolas,monospace">"progress": 70, "total": 100</text>
+</svg>

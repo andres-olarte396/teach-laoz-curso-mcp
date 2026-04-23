@@ -1,5 +1,7 @@
 # Subtema 0.1.1: JSON como Formato de Intercambio de Datos
 
+![Estructura de tipos de datos JSON](../../diagramas/modulo_0/json_estructura.svg)
+
 ## ¿Qué es JSON?
 
 **JSON (JavaScript Object Notation)** es un formato ligero para el intercambio de datos. Es fácil de leer y escribir para los humanos, y fácil de analizar y generar para las máquinas. Es el estándar de facto para la comunicación entre clientes y servidores modernos, y es la base fundamental del protocolo MCP.

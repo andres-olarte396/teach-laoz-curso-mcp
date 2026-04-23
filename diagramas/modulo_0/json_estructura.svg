@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#01579b"/>
+      <stop offset="100%" stop-color="#0288d1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="12" fill="#f5f7fa"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#headerGrad)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Estructura de Tipos de Datos JSON</text>
+
+  <!-- Root Object -->
+  <rect x="300" y="80" width="200" height="44" rx="8" fill="#0288d1" filter="url(#shadow)"/>
+  <text x="400" y="107" text-anchor="middle" fill="#fff" font-size="15" font-weight="600">{ } Objeto JSON</text>
+
+  <!-- Lines from root -->
+  <line x1="340" y1="124" x2="110" y2="170" stroke="#546e7a" stroke-width="2"/>
+  <line x1="370" y1="124" x2="280" y2="170" stroke="#546e7a" stroke-width="2"/>
+  <line x1="400" y1="124" x2="400" y2="170" stroke="#546e7a" stroke-width="2"/>
+  <line x1="430" y1="124" x2="520" y2="170" stroke="#546e7a" stroke-width="2"/>
+  <line x1="460" y1="124" x2="640" y2="170" stroke="#546e7a" stroke-width="2"/>
+  <line x1="480" y1="124" x2="740" y2="170" stroke="#546e7a" stroke-width="2"/>
+
+  <!-- String -->
+  <rect x="40" y="170" width="140" height="70" rx="8" fill="#4caf50" filter="url(#shadow)"/>
+  <text x="110" y="196" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">String</text>
+  <text x="110" y="215" text-anchor="middle" fill="#e8f5e9" font-size="11">"texto"</text>
+  <text x="110" y="232" text-anchor="middle" fill="#e8f5e9" font-size="10" font-style="italic">comillas dobles</text>
+
+  <!-- Number -->
+  <rect x="210" y="170" width="140" height="70" rx="8" fill="#ff9800" filter="url(#shadow)"/>
+  <text x="280" y="196" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Number</text>
+  <text x="280" y="215" text-anchor="middle" fill="#fff3e0" font-size="11">42, 3.14</text>
+  <text x="280" y="232" text-anchor="middle" fill="#fff3e0" font-size="10" font-style="italic">int o float</text>
+
+  <!-- Boolean -->
+  <rect x="370" y="170" width="120" height="70" rx="8" fill="#9c27b0" filter="url(#shadow)"/>
+  <text x="430" y="196" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Boolean</text>
+  <text x="430" y="215" text-anchor="middle" fill="#f3e5f5" font-size="11">true / false</text>
+  <text x="430" y="232" text-anchor="middle" fill="#f3e5f5" font-size="10" font-style="italic">lógico</text>
+
+  <!-- Null -->
+  <rect x="670" y="170" width="110" height="70" rx="8" fill="#607d8b" filter="url(#shadow)"/>
+  <text x="725" y="196" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Null</text>
+  <text x="725" y="215" text-anchor="middle" fill="#eceff1" font-size="11">null</text>
+  <text x="725" y="232" text-anchor="middle" fill="#eceff1" font-size="10" font-style="italic">valor vacío</text>
+
+  <!-- Array -->
+  <rect x="510" y="170" width="140" height="70" rx="8" fill="#03a9f4" filter="url(#shadow)"/>
+  <text x="580" y="196" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">[ ] Array</text>
+  <text x="580" y="215" text-anchor="middle" fill="#e1f5fe" font-size="11">[1, "a", true]</text>
+  <text x="580" y="232" text-anchor="middle" fill="#e1f5fe" font-size="10" font-style="italic">lista ordenada</text>
+
+  <!-- Array children -->
+  <line x1="560" y1="240" x2="520" y2="280" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="580" y1="240" x2="580" y2="280" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="600" y1="240" x2="640" y2="280" stroke="#546e7a" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <rect x="490" y="280" width="60" height="28" rx="6" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1.5"/>
+  <text x="520" y="299" text-anchor="middle" fill="#0288d1" font-size="10">[0]</text>
+  <rect x="550" y="280" width="60" height="28" rx="6" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1.5"/>
+  <text x="580" y="299" text-anchor="middle" fill="#0288d1" font-size="10">[1]</text>
+  <rect x="610" y="280" width="60" height="28" rx="6" fill="#e1f5fe" stroke="#03a9f4" stroke-width="1.5"/>
+  <text x="640" y="299" text-anchor="middle" fill="#0288d1" font-size="10">[n]</text>
+
+  <!-- MCP Example Section -->
+  <rect x="30" y="340" width="740" height="160" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="340" width="740" height="36" rx="10" fill="#263238"/>
+  <rect x="30" y="358" width="740" height="18" fill="#263238"/>
+  <text x="50" y="363" fill="#4fc3f7" font-size="13" font-weight="600">💡 Ejemplo en MCP — Mensaje JSON-RPC</text>
+
+  <text x="50" y="400" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">{</text>
+  <text x="70" y="418" fill="#4caf50" font-size="12" font-family="'Consolas', 'Courier New', monospace">"jsonrpc"</text>
+  <text x="148" y="418" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">:</text>
+  <text x="160" y="418" fill="#ff9800" font-size="12" font-family="'Consolas', 'Courier New', monospace">"2.0"</text>
+  <text x="200" y="418" fill="#546e7a" font-size="11" font-family="'Consolas', 'Courier New', monospace">← String</text>
+
+  <text x="70" y="436" fill="#4caf50" font-size="12" font-family="'Consolas', 'Courier New', monospace">"method"</text>
+  <text x="143" y="436" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">:</text>
+  <text x="155" y="436" fill="#ff9800" font-size="12" font-family="'Consolas', 'Courier New', monospace">"tools/call"</text>
+  <text x="258" y="436" fill="#546e7a" font-size="11" font-family="'Consolas', 'Courier New', monospace">← String</text>
+
+  <text x="70" y="454" fill="#4caf50" font-size="12" font-family="'Consolas', 'Courier New', monospace">"id"</text>
+  <text x="94" y="454" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">:</text>
+  <text x="106" y="454" fill="#e65100" font-size="12" font-family="'Consolas', 'Courier New', monospace">1</text>
+  <text x="122" y="454" fill="#546e7a" font-size="11" font-family="'Consolas', 'Courier New', monospace">← Number</text>
+
+  <text x="70" y="472" fill="#4caf50" font-size="12" font-family="'Consolas', 'Courier New', monospace">"params"</text>
+  <text x="138" y="472" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">:</text>
+  <text x="150" y="472" fill="#0288d1" font-size="12" font-family="'Consolas', 'Courier New', monospace">{"name": "get_weather"}</text>
+  <text x="365" y="472" fill="#546e7a" font-size="11" font-family="'Consolas', 'Courier New', monospace">← Object</text>
+
+  <text x="50" y="490" fill="#263238" font-size="12" font-family="'Consolas', 'Courier New', monospace">}</text>
+
+  <!-- Legend dots at right -->
+  <circle cx="590" y="400" r="5" fill="#4caf50"/>
+  <text x="600" y="404" fill="#263238" font-size="10">String (clave)</text>
+  <circle cx="590" y="420" r="5" fill="#ff9800"/>
+  <text x="600" y="424" fill="#263238" font-size="10">String (valor)</text>
+  <circle cx="590" y="440" r="5" fill="#e65100"/>
+  <text x="600" y="444" fill="#263238" font-size="10">Number</text>
+  <circle cx="590" y="460" r="5" fill="#0288d1"/>
+  <text x="600" y="464" fill="#263238" font-size="10">Object anidado</text>
+</svg>

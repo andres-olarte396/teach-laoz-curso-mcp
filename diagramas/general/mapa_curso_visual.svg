@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="6" markerHeight="5" refX="5" refY="2.5" orient="auto"><polygon points="0 0,6 2.5,0 5" fill="#546e7a"/></marker>
+  </defs>
+  <rect width="800" height="520" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Mapa Visual del Curso MCP</text>
+
+  <!-- Month 1 -->
+  <text x="40" y="86" fill="#01579b" font-size="12" font-weight="700">MES 1</text>
+  <rect x="40" y="95" width="160" height="44" rx="8" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="120" y="113" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M0: Nivelacion</text>
+  <text x="120" y="130" text-anchor="middle" fill="#546e7a" font-size="9">JSON, HTTP, APIs, LLMs</text>
+  <line x1="200" y1="117" x2="230" y2="117" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="232" y="95" width="180" height="44" rx="8" fill="#b3e5fc" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="322" y="113" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M1: Fundamentos MCP</text>
+  <text x="322" y="130" text-anchor="middle" fill="#546e7a" font-size="9">Arquitectura, JSON-RPC, Ciclo Vida</text>
+
+  <!-- Month 2 -->
+  <text x="40" y="166" fill="#0288d1" font-size="12" font-weight="700">MES 2</text>
+  <line x1="322" y1="139" x2="322" y2="175" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="40" y="175" width="180" height="44" rx="8" fill="#81d4fa" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="130" y="193" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M2: Transportes</text>
+  <text x="130" y="210" text-anchor="middle" fill="#546e7a" font-size="9">stdio, SSE, Streamable HTTP</text>
+  <line x1="220" y1="197" x2="250" y2="197" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="252" y="175" width="160" height="44" rx="8" fill="#81d4fa" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="332" y="193" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M3: Tools</text>
+  <text x="332" y="210" text-anchor="middle" fill="#546e7a" font-size="9">Herramientas, Schema, Progreso</text>
+
+  <!-- Month 3 -->
+  <text x="40" y="246" fill="#039be5" font-size="12" font-weight="700">MES 3</text>
+  <line x1="332" y1="219" x2="332" y2="255" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="40" y="255" width="180" height="44" rx="8" fill="#4fc3f7" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="130" y="273" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M4: Resources y Prompts</text>
+  <text x="130" y="290" text-anchor="middle" fill="#546e7a" font-size="9">URIs, Suscripciones, Templates</text>
+  <line x1="220" y1="277" x2="250" y2="277" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="252" y="255" width="160" height="44" rx="8" fill="#4fc3f7" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="332" y="273" text-anchor="middle" fill="#01579b" font-size="10" font-weight="700">M5: Avanzadas</text>
+  <text x="332" y="290" text-anchor="middle" fill="#546e7a" font-size="9">Sampling, Roots, Elicitation</text>
+
+  <rect x="440" y="255" width="160" height="44" rx="8" fill="#29b6f6" stroke="#0288d1" stroke-width="1.5" filter="url(#s)"/>
+  <text x="520" y="273" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M6: SDK TypeScript</text>
+  <text x="520" y="290" text-anchor="middle" fill="#e1f5fe" font-size="9">McpServer, Client, Testing</text>
+  <line x1="412" y1="277" x2="438" y2="277" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Month 4 -->
+  <text x="40" y="326" fill="#0277bd" font-size="12" font-weight="700">MES 4</text>
+  <rect x="40" y="335" width="160" height="44" rx="8" fill="#29b6f6" stroke="#0277bd" stroke-width="1.5" filter="url(#s)"/>
+  <text x="120" y="353" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M7: SDK Python</text>
+  <text x="120" y="370" text-anchor="middle" fill="#e1f5fe" font-size="9">FastMCP, Lifespan, pytest</text>
+  <line x1="200" y1="357" x2="228" y2="357" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="230" y="335" width="160" height="44" rx="8" fill="#03a9f4" stroke="#0277bd" stroke-width="1.5" filter="url(#s)"/>
+  <text x="310" y="353" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M8: Integraciones</text>
+  <text x="310" y="370" text-anchor="middle" fill="#e1f5fe" font-size="9">Claude Desktop, IDEs</text>
+  <line x1="390" y1="357" x2="418" y2="357" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="420" y="335" width="160" height="44" rx="8" fill="#039be5" stroke="#0277bd" stroke-width="1.5" filter="url(#s)"/>
+  <text x="500" y="353" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M9: Seguridad</text>
+  <text x="500" y="370" text-anchor="middle" fill="#e1f5fe" font-size="9">OAuth 2.1, Amenazas</text>
+
+  <!-- Month 5 -->
+  <text x="40" y="406" fill="#01579b" font-size="12" font-weight="700">MES 5</text>
+  <line x1="500" y1="379" x2="500" y2="415" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="40" y="415" width="180" height="44" rx="8" fill="#0288d1" stroke="#01579b" stroke-width="1.5" filter="url(#s)"/>
+  <text x="130" y="433" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M10: Multi-Servidor</text>
+  <text x="130" y="450" text-anchor="middle" fill="#e1f5fe" font-size="9">Gateway, Federation, Agentes</text>
+  <line x1="220" y1="437" x2="248" y2="437" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="250" y="415" width="180" height="44" rx="8" fill="#0277bd" stroke="#01579b" stroke-width="1.5" filter="url(#s)"/>
+  <text x="340" y="433" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M11: Produccion</text>
+  <text x="340" y="450" text-anchor="middle" fill="#e1f5fe" font-size="9">Docker, CI/CD, Observabilidad</text>
+  <line x1="430" y1="437" x2="458" y2="437" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="460" y="415" width="200" height="44" rx="8" fill="#01579b" stroke="#01579b" stroke-width="2" filter="url(#s)"/>
+  <text x="560" y="433" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">M12: Proyecto Final</text>
+  <text x="560" y="450" text-anchor="middle" fill="#e1f5fe" font-size="9">Ecosistema MCP completo</text>
+
+  <!-- Legend -->
+  <rect x="620" y="80" width="160" height="130" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1" filter="url(#s)"/>
+  <text x="700" y="100" text-anchor="middle" fill="#263238" font-size="10" font-weight="700">Leyenda</text>
+  <rect x="635" y="110" width="14" height="14" rx="3" fill="#e1f5fe"/><text x="658" y="122" fill="#263238" font-size="9">Fundamentos</text>
+  <rect x="635" y="130" width="14" height="14" rx="3" fill="#81d4fa"/><text x="658" y="142" fill="#263238" font-size="9">Core</text>
+  <rect x="635" y="150" width="14" height="14" rx="3" fill="#29b6f6"/><text x="658" y="162" fill="#263238" font-size="9">SDKs</text>
+  <rect x="635" y="170" width="14" height="14" rx="3" fill="#0288d1"/><text x="658" y="182" fill="#263238" font-size="9">Avanzado</text>
+  <rect x="635" y="190" width="14" height="14" rx="3" fill="#01579b"/><text x="658" y="202" fill="#263238" font-size="9">Proyecto</text>
+
+  <!-- Stats -->
+  <rect x="40" y="478" width="720" height="30" rx="6" fill="#263238"/>
+  <text x="400" y="498" text-anchor="middle" fill="#4fc3f7" font-size="11">13 Modulos | 20 Semanas | 142 Horas | 5 Proyectos Practicos | 1 Proyecto Integrador Final</text>
+</svg>

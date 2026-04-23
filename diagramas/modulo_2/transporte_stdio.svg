@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0288d1"/></marker>
+    <marker id="ag" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4caf50"/></marker>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#f44336"/></marker>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Transporte stdio — stdin / stdout / stderr</text>
+
+  <!-- Host Process -->
+  <rect x="40" y="90" width="280" height="280" rx="12" fill="#e1f5fe" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="90" width="280" height="32" rx="12" fill="#01579b"/>
+  <rect x="40" y="106" width="280" height="16" fill="#01579b"/>
+  <text x="180" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">HOST (Proceso Padre)</text>
+  <text x="180" y="150" text-anchor="middle" fill="#01579b" font-size="12">Claude Desktop / IDE</text>
+  <rect x="70" y="165" width="220" height="40" rx="6" fill="#fff" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="180" y="190" text-anchor="middle" fill="#0288d1" font-size="11" font-weight="600">MCP Client integrado</text>
+  <text x="180" y="230" text-anchor="middle" fill="#01579b" font-size="11" font-weight="600">Operaciones:</text>
+  <text x="180" y="250" text-anchor="middle" fill="#546e7a" font-size="10">1. Lanza servidor como subprocess</text>
+  <text x="180" y="268" text-anchor="middle" fill="#546e7a" font-size="10">2. Escribe JSON-RPC a stdin</text>
+  <text x="180" y="286" text-anchor="middle" fill="#546e7a" font-size="10">3. Lee respuestas de stdout</text>
+  <text x="180" y="304" text-anchor="middle" fill="#546e7a" font-size="10">4. Captura logs de stderr</text>
+  <text x="180" y="330" text-anchor="middle" fill="#01579b" font-size="10">spawn("node", ["server.js"])</text>
+  <text x="180" y="348" text-anchor="middle" fill="#01579b" font-size="10">spawn("python", ["server.py"])</text>
+
+  <!-- Server Process -->
+  <rect x="480" y="90" width="280" height="280" rx="12" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="480" y="90" width="280" height="32" rx="12" fill="#4caf50"/>
+  <rect x="480" y="106" width="280" height="16" fill="#4caf50"/>
+  <text x="620" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">SERVER (Subproceso)</text>
+  <text x="620" y="150" text-anchor="middle" fill="#2e7d32" font-size="12">Servidor MCP Local</text>
+  <rect x="510" y="165" width="220" height="40" rx="6" fill="#fff" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="620" y="190" text-anchor="middle" fill="#4caf50" font-size="11" font-weight="600">Logica de negocio</text>
+  <text x="620" y="230" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">Canales:</text>
+  <text x="620" y="250" text-anchor="middle" fill="#546e7a" font-size="10">stdin  → Lee mensajes del Host</text>
+  <text x="620" y="268" text-anchor="middle" fill="#546e7a" font-size="10">stdout → Escribe respuestas</text>
+  <text x="620" y="286" text-anchor="middle" fill="#546e7a" font-size="10">stderr → Escribe logs/debug</text>
+  <rect x="510" y="310" width="220" height="40" rx="6" fill="#ffebee" stroke="#f44336" stroke-width="1"/>
+  <text x="620" y="330" text-anchor="middle" fill="#c62828" font-size="10" font-weight="600">REGLA: stdout SOLO JSON-RPC</text>
+  <text x="620" y="345" text-anchor="middle" fill="#c62828" font-size="9">console.log() rompe el protocolo</text>
+
+  <!-- Arrows between -->
+  <line x1="320" y1="170" x2="478" y2="170" stroke="#0288d1" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="345" y="156" width="100" height="22" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1"/>
+  <text x="395" y="172" text-anchor="middle" fill="#01579b" font-size="10" font-weight="600">stdin →</text>
+
+  <line x1="478" y1="195" x2="320" y2="195" stroke="#4caf50" stroke-width="2.5" marker-end="url(#ag)"/>
+  <rect x="345" y="185" width="100" height="22" rx="4" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="395" y="200" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">← stdout</text>
+
+  <line x1="478" y1="330" x2="320" y2="330" stroke="#f44336" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#ar)"/>
+  <rect x="345" y="320" width="100" height="22" rx="4" fill="#ffebee" stroke="#f44336" stroke-width="1"/>
+  <text x="395" y="335" text-anchor="middle" fill="#c62828" font-size="10" font-weight="600">← stderr</text>
+</svg>

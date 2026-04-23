@@ -2,6 +2,8 @@
 
 ## Introducción a HTTP
 
+![Ciclo HTTP Request-Response](../../diagramas/modulo_0/http_request_response.svg)
+
 **HTTP (Hypertext Transfer Protocol)** es la base de la comunicación de datos en la World Wide Web. Aunque MCP puede funcionar sobre otros transportes (como `stdio`), el transporte via HTTP (Server-Sent Events) es esencial para conectar con servidores remotos.
 
 ## El Ciclo Request-Response
@@ -46,3 +48,29 @@ Indican el resultado de la petición.
 Para MCP, es vital entender **SSE**. A diferencia del ciclo request-response tradicional donde el servidor cierra la conexión tras responder, en SSE el servidor mantiene la conexión abierta para enviar eventos asíncronos al cliente.
 
 Esto permite que un servidor MCP envíe notificaciones (logs, cambios de estado) al cliente en tiempo real sobre una conexión HTTP estándar.
+
+### HTTP Normal vs SSE
+
+```mermaid
+sequenceDiagram
+    participant C as Cliente
+    participant S as Servidor
+
+    rect rgb(225, 245, 254)
+    Note over C,S: HTTP Normal (Request-Response)
+    C->>S: GET /api/data
+    S-->>C: 200 OK + JSON (conexión se cierra)
+    C->>S: GET /api/data
+    S-->>C: 200 OK + JSON (conexión se cierra)
+    end
+
+    rect rgb(232, 245, 233)
+    Note over C,S: SSE (Server-Sent Events)
+    C->>S: GET /events (Accept: text/event-stream)
+    S-->>C: data: {"evento": 1}
+    Note right of S: Conexión abierta
+    S-->>C: data: {"evento": 2}
+    S-->>C: data: {"evento": 3}
+    Note right of S: El servidor sigue enviando...
+    end
+```

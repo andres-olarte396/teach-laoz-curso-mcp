@@ -69,3 +69,30 @@ Una vez que el cliente recibe la respuesta de inicialización y está satisfecho
 ```
 
 Hasta que se reciba esta notificación, el servidor no debe enviar ninguna otra solicitud o notificación al cliente.
+
+## Diagrama de Secuencia del Handshake
+
+```mermaid
+sequenceDiagram
+    participant C as Client (Claude Desktop)
+    participant S as Server (MCP Server)
+
+    Note over C,S: Fase de Inicialización
+
+    C->>S: initialize {protocolVersion, capabilities, clientInfo}
+    Note right of S: Evalúa versión y<br/>capacidades del cliente
+
+    S-->>C: result {protocolVersion, capabilities, serverInfo}
+    Note left of C: Registra las<br/>capacidades del servidor
+
+    C->>S: notifications/initialized
+    Note over C,S: ✅ Conexión lista para operación
+
+    rect rgb(232, 245, 233)
+    Note over C,S: Fase de Operación
+    C->>S: tools/list
+    S-->>C: result: [herramientas...]
+    C->>S: tools/call {name, arguments}
+    S-->>C: result: {content: [...]}
+    end
+```

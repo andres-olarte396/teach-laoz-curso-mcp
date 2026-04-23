@@ -2,7 +2,21 @@
 
 Una conexión MCP no es caótica; sigue un diagrama de estados estricto para garantizar que ambos lados estén sincronizados.
 
+![Ciclo de Vida de una Conexión MCP](../../diagramas/modulo_1/ciclo_vida_conexion.svg)
+
 ## Diagrama de Estados
+
+```mermaid
+stateDiagram-v2
+    [*] --> Conectado: Transporte abierto
+    Conectado --> Inicializacion: Client envía initialize
+    Inicializacion --> Operacion: notifications/initialized
+    Operacion --> Operacion: tools/call, resources/read, ping...
+    Operacion --> Cierre: shutdown / SIGTERM
+    Inicializacion --> Error: Version mismatch / timeout
+    Error --> [*]
+    Cierre --> [*]
+```
 
 1. **Conexión Iniciada:** El transporte (stdio / SSE) se establece. Aún no se pueden enviar mensajes de lógica de negocio.
 2. **Inicialización (Initialization):**

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#546e7a"/></marker>
+  </defs>
+  <rect width="800" height="380" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Ciclo de Vida de una Conexion MCP</text>
+
+  <!-- State 1: Transport -->
+  <rect x="30" y="90" width="160" height="70" rx="10" fill="#fff" stroke="#607d8b" stroke-width="2" filter="url(#s)"/>
+  <circle cx="55" cy="105" r="10" fill="#607d8b"/><text x="55" y="109" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">1</text>
+  <text x="115" y="110" text-anchor="middle" fill="#263238" font-size="12" font-weight="600">Conectado</text>
+  <text x="110" y="132" text-anchor="middle" fill="#546e7a" font-size="10">Transporte abierto</text>
+  <text x="110" y="147" text-anchor="middle" fill="#546e7a" font-size="10">(stdio/HTTP)</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="190" y1="125" x2="228" y2="125" stroke="#546e7a" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- State 2: Initializing -->
+  <rect x="230" y="90" width="160" height="70" rx="10" fill="#fff" stroke="#ff9800" stroke-width="2" filter="url(#s)"/>
+  <circle cx="255" cy="105" r="10" fill="#ff9800"/><text x="255" y="109" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">2</text>
+  <text x="315" y="110" text-anchor="middle" fill="#263238" font-size="12" font-weight="600">Inicializacion</text>
+  <text x="310" y="132" text-anchor="middle" fill="#546e7a" font-size="10">Handshake</text>
+  <text x="310" y="147" text-anchor="middle" fill="#546e7a" font-size="10">initialize + initialized</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="390" y1="125" x2="428" y2="125" stroke="#546e7a" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- State 3: Running -->
+  <rect x="430" y="80" width="160" height="80" rx="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2.5" filter="url(#s)"/>
+  <circle cx="455" cy="98" r="10" fill="#4caf50"/><text x="455" y="102" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">3</text>
+  <text x="515" y="103" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="700">Operacion</text>
+  <text x="510" y="125" text-anchor="middle" fill="#2e7d32" font-size="10">tools/call</text>
+  <text x="510" y="140" text-anchor="middle" fill="#2e7d32" font-size="10">resources/read</text>
+  <text x="510" y="155" text-anchor="middle" fill="#2e7d32" font-size="10">prompts/get, ping</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="590" y1="125" x2="628" y2="125" stroke="#546e7a" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- State 4: Shutdown -->
+  <rect x="630" y="90" width="140" height="70" rx="10" fill="#fff" stroke="#f44336" stroke-width="2" filter="url(#s)"/>
+  <circle cx="655" cy="105" r="10" fill="#f44336"/><text x="655" y="109" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">4</text>
+  <text x="705" y="110" text-anchor="middle" fill="#263238" font-size="12" font-weight="600">Cierre</text>
+  <text x="700" y="132" text-anchor="middle" fill="#546e7a" font-size="10">SIGTERM / close</text>
+  <text x="700" y="147" text-anchor="middle" fill="#546e7a" font-size="10">Cleanup recursos</text>
+
+  <!-- Detail: Initialization sequence -->
+  <rect x="40" y="190" width="720" height="170" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5" filter="url(#s)"/>
+  <rect x="40" y="190" width="720" height="30" rx="10" fill="#263238"/>
+  <rect x="40" y="206" width="720" height="14" fill="#263238"/>
+  <text x="400" y="211" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="600">Detalle: Fase de Inicializacion (Estado 2)</text>
+
+  <!-- Client column -->
+  <rect x="120" y="230" width="100" height="24" rx="4" fill="#0288d1"/><text x="170" y="247" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Client</text>
+  <line x1="170" y1="254" x2="170" y2="348" stroke="#0288d1" stroke-width="2"/>
+
+  <!-- Server column -->
+  <rect x="560" y="230" width="100" height="24" rx="4" fill="#4caf50"/><text x="610" y="247" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Server</text>
+  <line x1="610" y1="254" x2="610" y2="348" stroke="#4caf50" stroke-width="2"/>
+
+  <!-- Message 1: initialize -->
+  <line x1="172" y1="275" x2="608" y2="275" stroke="#0288d1" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="290" y="262" width="200" height="22" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1"/>
+  <text x="390" y="278" text-anchor="middle" fill="#01579b" font-size="10" font-weight="600">initialize (version, caps)</text>
+
+  <!-- Message 2: response -->
+  <line x1="608" y1="305" x2="172" y2="305" stroke="#4caf50" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="290" y="292" width="200" height="22" rx="4" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="390" y="308" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">response (server caps)</text>
+
+  <!-- Message 3: initialized -->
+  <line x1="172" y1="335" x2="608" y2="335" stroke="#ff9800" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="270" y="322" width="240" height="22" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="390" y="338" text-anchor="middle" fill="#e65100" font-size="10" font-weight="600">notifications/initialized</text>
+</svg>

@@ -2,6 +2,8 @@
 
 ## ¿Qué es stdio?
 
+![Transporte stdio](../../diagramas/modulo_2/transporte_stdio.svg)
+
 `stdio` (Standard Input/Output) es el mecanismo de comunicación más básico en sistemas operativos tipo Unix y Windows.
 Cada proceso tiene, por defecto, tres canales:
 

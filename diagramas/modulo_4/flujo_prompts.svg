@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+    <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#546e7a"/></marker>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Flujo de Prompts MCP</text>
+
+  <!-- Step 1: Definition -->
+  <rect x="30" y="80" width="220" height="140" rx="10" fill="#fff" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="30" y="80" width="220" height="28" rx="10" fill="#0288d1"/>
+  <rect x="30" y="94" width="220" height="14" fill="#0288d1"/>
+  <text x="140" y="99" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">1. Definicion</text>
+  <text x="50" y="130" fill="#01579b" font-size="10" font-weight="600">name:</text><text x="95" y="130" fill="#263238" font-size="10">"analyze_code"</text>
+  <text x="50" y="150" fill="#01579b" font-size="10" font-weight="600">description:</text><text x="125" y="150" fill="#263238" font-size="9">"Analiza codigo"</text>
+  <text x="50" y="170" fill="#01579b" font-size="10" font-weight="600">arguments:</text>
+  <text x="70" y="188" fill="#546e7a" font-size="9">language (required)</text>
+  <text x="70" y="204" fill="#546e7a" font-size="9">style (optional)</text>
+
+  <line x1="250" y1="150" x2="288" y2="150" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Step 2: Resolution (prompts/get) -->
+  <rect x="290" y="80" width="220" height="140" rx="10" fill="#fff" stroke="#ff9800" stroke-width="2" filter="url(#s)"/>
+  <rect x="290" y="80" width="220" height="28" rx="10" fill="#ff9800"/>
+  <rect x="290" y="94" width="220" height="14" fill="#ff9800"/>
+  <text x="400" y="99" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">2. Resolucion</text>
+  <text x="310" y="127" fill="#e65100" font-size="10" font-weight="600">prompts/get</text>
+  <text x="310" y="148" fill="#263238" font-size="10">Server genera mensajes</text>
+  <text x="310" y="166" fill="#263238" font-size="10">con datos dinamicos:</text>
+  <text x="310" y="186" fill="#546e7a" font-size="10">• Consulta BD</text>
+  <text x="310" y="202" fill="#546e7a" font-size="10">• Lee archivos actuales</text>
+
+  <line x1="510" y1="150" x2="548" y2="150" stroke="#546e7a" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <!-- Step 3: Multi-role messages -->
+  <rect x="550" y="80" width="220" height="140" rx="10" fill="#fff" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="550" y="80" width="220" height="28" rx="10" fill="#4caf50"/>
+  <rect x="550" y="94" width="220" height="14" fill="#4caf50"/>
+  <text x="660" y="99" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">3. Mensajes</text>
+  <rect x="570" y="118" width="180" height="22" rx="4" fill="#e1f5fe"/><text x="660" y="134" text-anchor="middle" fill="#01579b" font-size="10">role: "user" + text</text>
+  <rect x="570" y="146" width="180" height="22" rx="4" fill="#f3e5f5"/><text x="660" y="162" text-anchor="middle" fill="#7b1fa2" font-size="10">role: "assistant" + text</text>
+  <rect x="570" y="174" width="180" height="22" rx="4" fill="#e8f5e9"/><text x="660" y="190" text-anchor="middle" fill="#2e7d32" font-size="10">embedded resource</text>
+
+  <!-- Example -->
+  <rect x="60" y="250" width="680" height="130" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5" filter="url(#s)"/>
+  <rect x="60" y="250" width="680" height="28" rx="10" fill="#263238"/>
+  <rect x="60" y="264" width="680" height="14" fill="#263238"/>
+  <text x="400" y="270" text-anchor="middle" fill="#4fc3f7" font-size="12" font-weight="600">Ejemplo: Prompt "analyze_code" con language="python"</text>
+  <text x="80" y="300" fill="#01579b" font-size="11" font-weight="600">Mensaje 1 (user):</text>
+  <text x="80" y="318" fill="#263238" font-size="10">"Analiza el siguiente codigo Python siguiendo las mejores practicas de PEP8..."</text>
+  <text x="80" y="342" fill="#7b1fa2" font-size="11" font-weight="600">Mensaje 2 (user + embedded resource):</text>
+  <text x="80" y="360" fill="#263238" font-size="10">Contenido del archivo fuente actual del usuario (inyectado dinamicamente)</text>
+</svg>

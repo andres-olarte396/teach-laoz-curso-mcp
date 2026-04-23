@@ -2,6 +2,8 @@
 
 ## La Analogía del USB
 
+![Problema N×M vs Solución MCP](../../diagramas/modulo_1/problema_nxm.svg)
+
 Imagina si cada marca de impresora necesitara un puerto físico diferente en tu computadora.
 
 - HP necesita un puerto redondo.

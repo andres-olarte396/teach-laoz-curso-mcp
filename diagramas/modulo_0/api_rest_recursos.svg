@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+  </defs>
+  <rect width="800" height="400" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">API REST — Verbos HTTP y Recursos</text>
+  <!-- Resource -->
+  <rect x="280" y="80" width="240" height="44" rx="10" fill="#263238" filter="url(#s)"/>
+  <text x="400" y="107" text-anchor="middle" fill="#4fc3f7" font-size="15" font-weight="600">/api/usuarios/{id}</text>
+  <!-- GET -->
+  <rect x="40" y="160" width="160" height="80" rx="10" fill="#fff" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="160" width="160" height="28" rx="10" fill="#4caf50"/>
+  <rect x="40" y="174" width="160" height="14" fill="#4caf50"/>
+  <text x="120" y="180" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">GET</text>
+  <text x="120" y="206" text-anchor="middle" fill="#263238" font-size="11">Leer recurso</text>
+  <text x="120" y="224" text-anchor="middle" fill="#546e7a" font-size="10">200 OK</text>
+  <line x1="120" y1="160" x2="340" y2="124" stroke="#4caf50" stroke-width="1.5"/>
+  <!-- POST -->
+  <rect x="220" y="160" width="160" height="80" rx="10" fill="#fff" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="220" y="160" width="160" height="28" rx="10" fill="#0288d1"/>
+  <rect x="220" y="174" width="160" height="14" fill="#0288d1"/>
+  <text x="300" y="180" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">POST</text>
+  <text x="300" y="206" text-anchor="middle" fill="#263238" font-size="11">Crear recurso</text>
+  <text x="300" y="224" text-anchor="middle" fill="#546e7a" font-size="10">201 Created</text>
+  <line x1="300" y1="160" x2="380" y2="124" stroke="#0288d1" stroke-width="1.5"/>
+  <!-- PUT -->
+  <rect x="400" y="160" width="160" height="80" rx="10" fill="#fff" stroke="#ff9800" stroke-width="2" filter="url(#s)"/>
+  <rect x="400" y="160" width="160" height="28" rx="10" fill="#ff9800"/>
+  <rect x="400" y="174" width="160" height="14" fill="#ff9800"/>
+  <text x="480" y="180" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">PUT</text>
+  <text x="480" y="206" text-anchor="middle" fill="#263238" font-size="11">Reemplazar recurso</text>
+  <text x="480" y="224" text-anchor="middle" fill="#546e7a" font-size="10">200 OK</text>
+  <line x1="480" y1="160" x2="440" y2="124" stroke="#ff9800" stroke-width="1.5"/>
+  <!-- DELETE -->
+  <rect x="580" y="160" width="160" height="80" rx="10" fill="#fff" stroke="#f44336" stroke-width="2" filter="url(#s)"/>
+  <rect x="580" y="160" width="160" height="28" rx="10" fill="#f44336"/>
+  <rect x="580" y="174" width="160" height="14" fill="#f44336"/>
+  <text x="660" y="180" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">DELETE</text>
+  <text x="660" y="206" text-anchor="middle" fill="#263238" font-size="11">Eliminar recurso</text>
+  <text x="660" y="224" text-anchor="middle" fill="#546e7a" font-size="10">204 No Content</text>
+  <line x1="660" y1="160" x2="480" y2="124" stroke="#f44336" stroke-width="1.5"/>
+  <!-- MCP context -->
+  <rect x="80" y="280" width="640" height="100" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5" filter="url(#s)"/>
+  <rect x="80" y="280" width="640" height="30" rx="10" fill="#263238"/>
+  <rect x="80" y="296" width="640" height="14" fill="#263238"/>
+  <text x="400" y="300" text-anchor="middle" fill="#4fc3f7" font-size="12" font-weight="600">En MCP: Los servidores HTTP exponen endpoints para JSON-RPC</text>
+  <text x="400" y="334" text-anchor="middle" fill="#263238" font-size="12">POST /mcp → Enviar mensajes JSON-RPC (tools/call, resources/read...)</text>
+  <text x="400" y="356" text-anchor="middle" fill="#263238" font-size="12">GET  /mcp → Abrir stream SSE para recibir notificaciones del servidor</text>
+</svg>

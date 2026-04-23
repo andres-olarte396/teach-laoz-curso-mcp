@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+  </defs>
+  <rect width="800" height="420" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Anatomia de una Tool MCP</text>
+
+  <!-- Main tool card -->
+  <rect x="60" y="80" width="680" height="320" rx="12" fill="#fff" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+
+  <!-- name -->
+  <rect x="80" y="100" width="640" height="46" rx="8" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+  <text x="100" y="120" fill="#01579b" font-size="12" font-weight="700">name</text>
+  <text x="100" y="138" fill="#263238" font-size="11" font-family="Consolas,monospace">"get_weather"</text>
+  <text x="500" y="128" fill="#546e7a" font-size="10">Identificador unico, snake_case</text>
+
+  <!-- description -->
+  <rect x="80" y="156" width="640" height="46" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="100" y="176" fill="#2e7d32" font-size="12" font-weight="700">description</text>
+  <text x="100" y="194" fill="#263238" font-size="11" font-family="Consolas,monospace">"Obtiene el pronostico del tiempo para una ciudad"</text>
+  <text x="680" y="176" text-anchor="end" fill="#4caf50" font-size="9" font-weight="600">CRITICO</text>
+
+  <!-- inputSchema -->
+  <rect x="80" y="212" width="310" height="170" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="100" y="234" fill="#e65100" font-size="12" font-weight="700">inputSchema (JSON Schema)</text>
+  <text x="100" y="258" fill="#263238" font-size="10" font-family="Consolas,monospace">type: "object"</text>
+  <text x="100" y="276" fill="#263238" font-size="10" font-family="Consolas,monospace">properties:</text>
+  <rect x="110" y="284" width="260" height="22" rx="4" fill="#fff"/><text x="120" y="300" fill="#e65100" font-size="10" font-family="Consolas,monospace">city: {type: "string"}</text>
+  <rect x="110" y="310" width="260" height="22" rx="4" fill="#fff"/><text x="120" y="326" fill="#e65100" font-size="10" font-family="Consolas,monospace">days: {type: "integer"}</text>
+  <text x="100" y="356" fill="#263238" font-size="10" font-family="Consolas,monospace">required: ["city"]</text>
+  <text x="100" y="374" fill="#546e7a" font-size="9">El LLM genera argumentos segun este esquema</text>
+
+  <!-- outputSchema -->
+  <rect x="410" y="212" width="310" height="90" rx="8" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1.5"/>
+  <text x="430" y="234" fill="#7b1fa2" font-size="12" font-weight="700">outputSchema (opcional)</text>
+  <text x="430" y="258" fill="#263238" font-size="10" font-family="Consolas,monospace">type: "object"</text>
+  <text x="430" y="276" fill="#263238" font-size="10" font-family="Consolas,monospace">properties:</text>
+  <text x="450" y="294" fill="#7b1fa2" font-size="10" font-family="Consolas,monospace">temp, humidity, desc...</text>
+
+  <!-- annotations -->
+  <rect x="410" y="312" width="310" height="70" rx="8" fill="#fce4ec" stroke="#f44336" stroke-width="1.5"/>
+  <text x="430" y="334" fill="#c62828" font-size="12" font-weight="700">annotations (metadatos)</text>
+  <text x="430" y="354" fill="#263238" font-size="10" font-family="Consolas,monospace">readOnlyHint: true</text>
+  <text x="430" y="372" fill="#263238" font-size="10" font-family="Consolas,monospace">openWorldHint: true</text>
+</svg>

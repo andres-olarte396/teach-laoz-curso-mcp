@@ -2,6 +2,8 @@
 
 ## ¿Qué es una Tool?
 
+![Anatomía de una Tool MCP](../../diagramas/modulo_3/anatomia_tool.svg)
+
 Una **Tool** es la primitiva más potente de MCP. Permite al modelo realizar acciones en el mundo exterior (leer archivos, ejecutar SQL, llamar a una API) o realizar cálculos complejos.
 
 Desde la perspectiva del protocolo, una Tool es una definición JSON que el servidor envía al cliente.

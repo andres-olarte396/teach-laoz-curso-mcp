@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+  </defs>
+  <rect width="800" height="380" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Comparativa de Transportes MCP</text>
+
+  <!-- Table Header -->
+  <rect x="30" y="78" width="140" height="36" rx="0" fill="#263238"/><text x="100" y="101" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Criterio</text>
+  <rect x="170" y="78" width="190" height="36" rx="0" fill="#0288d1"/><text x="265" y="101" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">stdio</text>
+  <rect x="360" y="78" width="190" height="36" rx="0" fill="#ff9800"/><text x="455" y="101" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">SSE (Legacy)</text>
+  <rect x="550" y="78" width="220" height="36" rx="0" fill="#4caf50"/><text x="660" y="101" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Streamable HTTP</text>
+
+  <!-- Row 1: Localidad -->
+  <rect x="30" y="114" width="140" height="36" fill="#f0f0f0"/><text x="100" y="137" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Localidad</text>
+  <rect x="170" y="114" width="190" height="36" fill="#e1f5fe"/><text x="265" y="137" text-anchor="middle" fill="#01579b" font-size="10">Solo local</text>
+  <rect x="360" y="114" width="190" height="36" fill="#fff3e0"/><text x="455" y="137" text-anchor="middle" fill="#e65100" font-size="10">Local o remoto</text>
+  <rect x="550" y="114" width="220" height="36" fill="#e8f5e9"/><text x="660" y="137" text-anchor="middle" fill="#2e7d32" font-size="10">Local o remoto</text>
+
+  <!-- Row 2: Latencia -->
+  <rect x="30" y="150" width="140" height="36" fill="#fff"/><text x="100" y="173" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Latencia</text>
+  <rect x="170" y="150" width="190" height="36" fill="#fff"/><text x="265" y="173" text-anchor="middle" fill="#01579b" font-size="10">Minima (IPC)</text>
+  <rect x="360" y="150" width="190" height="36" fill="#fff"/><text x="455" y="173" text-anchor="middle" fill="#e65100" font-size="10">Media (HTTP)</text>
+  <rect x="550" y="150" width="220" height="36" fill="#fff"/><text x="660" y="173" text-anchor="middle" fill="#2e7d32" font-size="10">Media (HTTP)</text>
+
+  <!-- Row 3: Escalabilidad -->
+  <rect x="30" y="186" width="140" height="36" fill="#f0f0f0"/><text x="100" y="209" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Escalabilidad</text>
+  <rect x="170" y="186" width="190" height="36" fill="#e1f5fe"/><text x="265" y="209" text-anchor="middle" fill="#01579b" font-size="10">Baja (1 proceso)</text>
+  <rect x="360" y="186" width="190" height="36" fill="#fff3e0"/><text x="455" y="209" text-anchor="middle" fill="#e65100" font-size="10">Media</text>
+  <rect x="550" y="186" width="220" height="36" fill="#e8f5e9"/><text x="660" y="209" text-anchor="middle" fill="#2e7d32" font-size="10">Alta (stateless)</text>
+
+  <!-- Row 4: Seguridad -->
+  <rect x="30" y="222" width="140" height="36" fill="#fff"/><text x="100" y="245" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Seguridad</text>
+  <rect x="170" y="222" width="190" height="36" fill="#fff"/><text x="265" y="245" text-anchor="middle" fill="#01579b" font-size="10">Inherente (local)</text>
+  <rect x="360" y="222" width="190" height="36" fill="#fff"/><text x="455" y="245" text-anchor="middle" fill="#e65100" font-size="10">Requiere HTTPS</text>
+  <rect x="550" y="222" width="220" height="36" fill="#fff"/><text x="660" y="245" text-anchor="middle" fill="#2e7d32" font-size="10">OAuth 2.1 + HTTPS</text>
+
+  <!-- Row 5: Resumability -->
+  <rect x="30" y="258" width="140" height="36" fill="#f0f0f0"/><text x="100" y="281" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Resumability</text>
+  <rect x="170" y="258" width="190" height="36" fill="#e1f5fe"/><text x="265" y="281" text-anchor="middle" fill="#01579b" font-size="10">No</text>
+  <rect x="360" y="258" width="190" height="36" fill="#fff3e0"/><text x="455" y="281" text-anchor="middle" fill="#e65100" font-size="10">No (nativo)</text>
+  <rect x="550" y="258" width="220" height="36" fill="#e8f5e9"/><text x="660" y="281" text-anchor="middle" fill="#2e7d32" font-size="10">Si (Last-Event-ID)</text>
+
+  <!-- Row 6: Uso ideal -->
+  <rect x="30" y="294" width="140" height="46" fill="#fff"/><text x="100" y="322" text-anchor="middle" fill="#263238" font-size="10" font-weight="600">Uso ideal</text>
+  <rect x="170" y="294" width="190" height="46" fill="#fff"/><text x="265" y="314" text-anchor="middle" fill="#01579b" font-size="10">IDEs, CLI,</text><text x="265" y="330" text-anchor="middle" fill="#01579b" font-size="10">herramientas locales</text>
+  <rect x="360" y="294" width="190" height="46" fill="#fff"/><text x="455" y="314" text-anchor="middle" fill="#e65100" font-size="10">Compatibilidad</text><text x="455" y="330" text-anchor="middle" fill="#e65100" font-size="10">legacy</text>
+  <rect x="550" y="294" width="220" height="46" fill="#fff"/><text x="660" y="314" text-anchor="middle" fill="#2e7d32" font-size="10">Produccion, APIs</text><text x="660" y="330" text-anchor="middle" fill="#2e7d32" font-size="10">remotas, multi-tenant</text>
+
+  <!-- Recommendation -->
+  <rect x="30" y="348" width="740" height="24" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="400" y="365" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">Recomendado: Streamable HTTP para nuevas implementaciones remotas, stdio para herramientas locales</text>
+</svg>

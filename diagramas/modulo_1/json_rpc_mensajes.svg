@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="'Segoe UI',system-ui,sans-serif">
+  <defs>
+    <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+    <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
+  </defs>
+  <rect width="800" height="460" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Mensajes JSON-RPC 2.0 en MCP</text>
+
+  <!-- REQUEST -->
+  <rect x="30" y="80" width="240" height="350" rx="10" fill="#fff" stroke="#0288d1" stroke-width="2" filter="url(#s)"/>
+  <rect x="30" y="80" width="240" height="34" rx="10" fill="#0288d1"/>
+  <rect x="30" y="98" width="240" height="16" fill="#0288d1"/>
+  <text x="150" y="103" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Request (Solicitud)</text>
+  <text x="50" y="140" fill="#01579b" font-size="11" font-weight="700">Campos obligatorios:</text>
+  <rect x="45" y="150" width="210" height="24" rx="4" fill="#e1f5fe"/><text x="150" y="167" text-anchor="middle" fill="#01579b" font-size="10" font-family="Consolas,monospace">"jsonrpc": "2.0"</text>
+  <rect x="45" y="180" width="210" height="24" rx="4" fill="#e1f5fe"/><text x="150" y="197" text-anchor="middle" fill="#01579b" font-size="10" font-family="Consolas,monospace">"method": "tools/call"</text>
+  <rect x="45" y="210" width="210" height="24" rx="4" fill="#e1f5fe"/><text x="150" y="227" text-anchor="middle" fill="#01579b" font-size="10" font-family="Consolas,monospace">"id": 1</text>
+  <text x="50" y="258" fill="#01579b" font-size="11" font-weight="700">Campo opcional:</text>
+  <rect x="45" y="268" width="210" height="24" rx="4" fill="#e1f5fe" stroke="#0288d1" stroke-width="1" stroke-dasharray="3,2"/><text x="150" y="285" text-anchor="middle" fill="#0288d1" font-size="10" font-family="Consolas,monospace">"params": {...}</text>
+  <text x="50" y="320" fill="#546e7a" font-size="10">El "id" identifica la solicitud</text>
+  <text x="50" y="338" fill="#546e7a" font-size="10">para emparejar con su respuesta.</text>
+  <rect x="45" y="355" width="210" height="55" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="150" y="375" text-anchor="middle" fill="#e65100" font-size="10" font-weight="600">Espera respuesta</text>
+  <text x="150" y="393" text-anchor="middle" fill="#e65100" font-size="9">El servidor DEBE responder</text>
+  <text x="150" y="405" text-anchor="middle" fill="#e65100" font-size="9">con result o error</text>
+
+  <!-- RESPONSE -->
+  <rect x="290" y="80" width="240" height="350" rx="10" fill="#fff" stroke="#4caf50" stroke-width="2" filter="url(#s)"/>
+  <rect x="290" y="80" width="240" height="34" rx="10" fill="#4caf50"/>
+  <rect x="290" y="98" width="240" height="16" fill="#4caf50"/>
+  <text x="410" y="103" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Response (Respuesta)</text>
+  <text x="310" y="140" fill="#2e7d32" font-size="11" font-weight="700">Exito:</text>
+  <rect x="305" y="150" width="210" height="24" rx="4" fill="#e8f5e9"/><text x="410" y="167" text-anchor="middle" fill="#2e7d32" font-size="10" font-family="Consolas,monospace">"jsonrpc": "2.0"</text>
+  <rect x="305" y="180" width="210" height="24" rx="4" fill="#e8f5e9"/><text x="410" y="197" text-anchor="middle" fill="#2e7d32" font-size="10" font-family="Consolas,monospace">"result": {...}</text>
+  <rect x="305" y="210" width="210" height="24" rx="4" fill="#e8f5e9"/><text x="410" y="227" text-anchor="middle" fill="#2e7d32" font-size="10" font-family="Consolas,monospace">"id": 1</text>
+  <text x="310" y="258" fill="#f44336" font-size="11" font-weight="700">Error:</text>
+  <rect x="305" y="268" width="210" height="55" rx="4" fill="#ffebee"/><text x="410" y="286" text-anchor="middle" fill="#c62828" font-size="10" font-family="Consolas,monospace">"error": {</text>
+  <text x="410" y="302" text-anchor="middle" fill="#c62828" font-size="9" font-family="Consolas,monospace">  "code": -32600,</text>
+  <text x="410" y="316" text-anchor="middle" fill="#c62828" font-size="9" font-family="Consolas,monospace">  "message": "Invalid"}</text>
+  <rect x="305" y="340" width="210" height="55" rx="6" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="410" y="362" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">result XOR error</text>
+  <text x="410" y="380" text-anchor="middle" fill="#2e7d32" font-size="9">Siempre uno u otro,</text>
+  <text x="410" y="392" text-anchor="middle" fill="#2e7d32" font-size="9">nunca ambos</text>
+
+  <!-- NOTIFICATION -->
+  <rect x="550" y="80" width="220" height="350" rx="10" fill="#fff" stroke="#ff9800" stroke-width="2" filter="url(#s)"/>
+  <rect x="550" y="80" width="220" height="34" rx="10" fill="#ff9800"/>
+  <rect x="550" y="98" width="220" height="16" fill="#ff9800"/>
+  <text x="660" y="103" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">Notification</text>
+  <text x="570" y="140" fill="#e65100" font-size="11" font-weight="700">Campos:</text>
+  <rect x="565" y="150" width="190" height="24" rx="4" fill="#fff3e0"/><text x="660" y="167" text-anchor="middle" fill="#e65100" font-size="10" font-family="Consolas,monospace">"jsonrpc": "2.0"</text>
+  <rect x="565" y="180" width="190" height="24" rx="4" fill="#fff3e0"/><text x="660" y="197" text-anchor="middle" fill="#e65100" font-size="10" font-family="Consolas,monospace">"method": "..."</text>
+  <rect x="565" y="210" width="190" height="24" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1" stroke-dasharray="3,2"/><text x="660" y="227" text-anchor="middle" fill="#e65100" font-size="10" font-family="Consolas,monospace">"params": {...}</text>
+  <text x="570" y="264" fill="#e65100" font-size="11" font-weight="600">SIN campo "id"</text>
+  <text x="570" y="284" fill="#546e7a" font-size="10">No espera respuesta.</text>
+  <text x="570" y="302" fill="#546e7a" font-size="10">"Fire and forget".</text>
+  <text x="570" y="330" fill="#e65100" font-size="11" font-weight="600">Ejemplos MCP:</text>
+  <text x="570" y="350" fill="#546e7a" font-size="10">• notifications/initialized</text>
+  <text x="570" y="368" fill="#546e7a" font-size="10">• notifications/progress</text>
+  <text x="570" y="386" fill="#546e7a" font-size="10">• notifications/message</text>
+  <text x="570" y="404" fill="#546e7a" font-size="10">• tools/list_changed</text>
+</svg>

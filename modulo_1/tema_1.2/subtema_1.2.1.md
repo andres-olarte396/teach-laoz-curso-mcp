@@ -2,6 +2,8 @@
 
 ## Arquitectura de MCP
 
+![Arquitectura Host, Client y Server](../../diagramas/modulo_1/arquitectura_host_client_server.svg)
+
 Para entender MCP, primero debemos identificar los actores. A menudo hablamos de "Cliente" y "Servidor", pero en MCP hay un tercer rol crucial: el "Host".
 
 ### 1. Host (Anfitrión)
@@ -30,12 +32,12 @@ El **Server** es el programa que expone las capacidades (Tools, Resources, Promp
 
 ```mermaid
 graph LR
-    User[Usuario] -- Interfaz --> Host[Host (Claude Desktop)]
-    Host -- Prompt + Contexto --> LLM[Modelo (Claude 3.5)]
-    Host -- Protocolo MCP --> Server[Servidor MCP (Postgres)]
+    User[Usuario] -- Interfaz --> Host[Host <br> Claude Desktop]
+    Host -- Prompt + Contexto --> LLM[Modelo <br> Claude 3.5]
+    Host -- Protocolo MCP --> Server[Servidor MCP <br> Postgres]
 
     subgraph "Mundo MCP"
-    Client[Cliente MCP (Integrado en Host)] <--> Server
+    Client[Cliente MCP <br> Integrado en Host] <--> Server
     end
 ```
 

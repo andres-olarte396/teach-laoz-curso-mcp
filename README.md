@@ -2,6 +2,8 @@
 
 ## Descripción
 
+![Ecosistema MCP](diagramas/general/ecosistema_mcp.svg)
+
 Este curso integral está diseñado para enseñar a desarrolladores, ingenieros de IA y arquitectos de software cómo dominar el Model Context Protocol (MCP). Desde los fundamentos del protocolo hasta la implementación de servidores complejos, mecanismos de seguridad y arquitecturas multi-agente, este curso cubre todo lo necesario para construir un ecosistema de herramientas robusto para LLMs.
 
 ## Objetivos del Curso
@@ -16,6 +18,8 @@ Este curso integral está diseñado para enseñar a desarrolladores, ingenieros 
 ## Estructura del Curso
 
 El curso está dividido en 13 módulos progresivos:
+
+![Mapa Visual del Curso](diagramas/general/mapa_curso_visual.svg)
 
 - **Módulo 0**: Diagnóstico y Nivelación (JSON, HTTP, Entorno)
 - **Módulo 1**: Fundamentos del Protocolo MCP
