@@ -10,20 +10,20 @@ Eres el Lead Architect de una startup que quiere revolucionar DevOps. Tu tarea e
 
 Debes implementar **3 Servidores MCP** y **1 Cliente/Host**:
 
-1.  **Servidor 1: `ops-monitor` (Python/FastMCP)**
+1. **Servidor 1: `ops-monitor` (Python/FastMCP)**
     - **Resources:** `logs://system/{date}` (Lee logs simulados), `metrics://cpu` (Stream de métricas).
     - **Tools:** `check_status(service_name)`, `restart_service(service_name)`.
 
-2.  **Servidor 2: `ops-docs` (Node.js/SDK)**
+2. **Servidor 2: `ops-docs` (Node.js/SDK)**
     - **Resources:** Documentación técnica en Markdown.
     - **Prompts:** `generate_incident_report`.
     - **Tools:** `search_docs(query)`.
 
-3.  **Servidor 3: `ops-db` (Tu elección)**
+3. **Servidor 3: `ops-db` (Tu elección)**
     - **Tools:** `create_ticket(title, severity)`, `list_tickets()`.
     - Base de datos SQLite real.
 
-4.  **Cliente Custom: `ops-dashboard`**
+4. **Cliente Custom: `ops-dashboard`**
     - Una pequeña web o CLI que se conecte a los 3 servidores (vía Gateway o Directo).
     - Permita al usuario chatear con "OpsBot" para resolver problemas usando las herramientas.
 

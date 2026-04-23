@@ -15,25 +15,37 @@ Este curso integral está diseñado para enseñar a desarrolladores, ingenieros 
 - **Integrar** servidores MCP en flujos de trabajo con Claude Desktop e IDEs.
 - **Construir** arquitecturas complejas con múltiples servidores y gateways.
 
+## Documentos Generales del Curso
+
+| Documento                                        | Descripción                                                          |
+| :----------------------------------------------- | :------------------------------------------------------------------- |
+| [Plan Curricular](plan_curricular.md)            | Arquitectura modular, objetivos y estructura pedagógica detallada    |
+| [Pensum de Competencias](pensum_competencias.md) | Matriz de competencias, resultados de aprendizaje y perfil de egreso |
+| [Cronograma](cronograma.md)                      | Calendario semanal de 20 semanas con horas por actividad             |
+| [Diagramas](diagramas/README.md)                 | Índice de todos los diagramas SVG del curso                          |
+
 ## Estructura del Curso
 
-El curso está dividido en 13 módulos progresivos:
+El curso está dividido en 14 módulos progresivos (Módulo 0 al Módulo 13):
 
 ![Mapa Visual del Curso](diagramas/general/mapa_curso_visual.svg)
 
-- **Módulo 0**: Diagnóstico y Nivelación (JSON, HTTP, Entorno)
-- **Módulo 1**: Fundamentos del Protocolo MCP
-- **Módulo 2**: Mecanismos de Transporte (stdio, SSE)
-- **Módulo 3**: Primitivas Core - Tools
-- **Módulo 4**: Primitivas Core - Resources y Prompts
-- **Módulo 5**: Primitivas Avanzadas (Sampling, Roots)
-- **Módulo 6**: SDK de TypeScript
-- **Módulo 7**: SDK de Python
-- **Módulo 8**: Integraciones y Hosts (Claude Desktop)
-- **Módulo 9**: Seguridad y Autorización
-- **Módulo 10**: Arquitecturas Multi-Servidor
-- **Módulo 11**: MCP en Producción
-- **Módulo 12**: Proyecto Integrador Final
+|      Módulo      | Título                                | Contenido                                                        |
+| :--------------: | :------------------------------------ | :--------------------------------------------------------------- |
+|  [0](modulo_0/)  | Diagnóstico y Nivelación              | JSON, HTTP, APIs REST, entorno de desarrollo                     |
+|  [1](modulo_1/)  | Fundamentos del Protocolo MCP         | Arquitectura Host/Client/Server, JSON-RPC 2.0, ciclo de vida     |
+|  [2](modulo_2/)  | Mecanismos de Transporte              | stdio, SSE, Streamable HTTP, selección de transporte             |
+|  [3](modulo_3/)  | Primitivas Core — Tools               | Anatomía, anotaciones, structured output, herramientas dinámicas |
+|  [4](modulo_4/)  | Primitivas Core — Resources y Prompts | URI templates, suscripciones, prompts parametrizables            |
+|  [5](modulo_5/)  | Primitivas Avanzadas                  | Sampling, Roots, elicitation, logging y progreso                 |
+|  [6](modulo_6/)  | SDK de TypeScript                     | APIs de alto/bajo nivel, cliente multi-servidor, testing         |
+|  [7](modulo_7/)  | SDK de Python                         | FastMCP, decoradores, lifecycle, composición de servidores       |
+|  [8](modulo_8/)  | Integraciones y Hosts                 | Claude Desktop, IDEs, frameworks de agentes, host personalizado  |
+|  [9](modulo_9/)  | Seguridad y Autorización              | OAuth 2.1, mitigación de amenazas, auditoría de 20 puntos        |
+| [10](modulo_10/) | Arquitecturas Avanzadas               | Gateway, federation, agentes autónomos, ecosistema comunitario   |
+| [11](modulo_11/) | MCP en Producción                     | Contenedores, observabilidad, CI/CD, versionado                  |
+| [12](modulo_12/) | Proyecto Integrador Final             | "Ecosistema de Operaciones Inteligentes" — proyecto completo     |
+| [13](modulo_13/) | Apéndice y Referencia                 | Glosario de términos MCP, recursos adicionales                   |
 
 ## Requisitos Previos
 
