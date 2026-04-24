@@ -1,56 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" font-family="'Segoe UI',system-ui,sans-serif">
   <defs>
     <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
     <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00695c"/><stop offset="100%" stop-color="#00897b"/></linearGradient>
     <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#00897b"/></marker>
   </defs>
-  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
-  <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
-  <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
-  <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Composicion de Servidores FastMCP</text>
+  <rect width="1000" height="500" rx="12" fill="#f5f7fa"/>
+  <rect x="0" y="0" width="1000" height="56" rx="12" fill="url(#h)"/>
+  <rect x="0" y="24" width="1000" height="32" fill="url(#h)"/>
+  <text x="500" y="36" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">Composición de Servidores FastMCP</text>
 
-  <!-- Main Server -->
-  <rect x="40" y="80" width="720" height="360" rx="12" fill="#e0f2f1" stroke="#00897b" stroke-width="2" filter="url(#s)"/>
-  <rect x="40" y="80" width="720" height="36" rx="12" fill="#00897b"/>
-  <rect x="40" y="100" width="720" height="16" fill="#00897b"/>
-  <text x="400" y="104" text-anchor="middle" fill="#fff" font-size="15" font-weight="700">App Principal (Main Server)</text>
+  <!-- Main App Background -->
+  <rect x="40" y="80" width="920" height="380" rx="12" fill="#e0f2f1" stroke="#00897b" stroke-width="2" filter="url(#s)"/>
+  <rect x="40" y="80" width="920" height="36" rx="12" fill="#00897b"/>
+  <rect x="40" y="100" width="920" height="16" fill="#00897b"/>
+  <text x="500" y="104" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">App Principal (Main Server)</text>
 
-  <rect x="60" y="140" width="200" height="60" rx="8" fill="#fff" stroke="#00897b" stroke-width="1.5"/>
-  <text x="160" y="165" text-anchor="middle" fill="#00695c" font-size="13" font-weight="700">mcp = FastMCP("Main")</text>
+  <!-- Module 1: Main Server Native Tools -->
+  <rect x="80" y="140" width="240" height="120" rx="8" fill="#fff" stroke="#00897b" stroke-width="2"/>
+  <text x="200" y="170" text-anchor="middle" fill="#00695c" font-size="14" font-weight="700">Herramientas Nativas</text>
+  <text x="200" y="190" text-anchor="middle" fill="#00695c" font-size="12">Funciones decoradas</text>
+  <rect x="100" y="205" width="200" height="40" rx="4" fill="#e0f2f1" stroke="#00897b" stroke-width="1"/>
+  <text x="200" y="230" text-anchor="middle" fill="#00695c" font-size="13" font-weight="600">mcp = FastMCP("Main")</text>
 
-  <!-- Module 1: FileSystem -->
-  <rect x="280" y="140" width="220" height="120" rx="8" fill="#fff" stroke="#ff9800" stroke-width="2" stroke-dasharray="4"/>
-  <text x="390" y="165" text-anchor="middle" fill="#e65100" font-size="12" font-weight="700">Módulo Secundario (Local)</text>
-  <text x="390" y="185" text-anchor="middle" fill="#e65100" font-size="10">Sub-servidor instanciado</text>
-  <rect x="300" y="200" width="180" height="40" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
-  <text x="390" y="225" text-anchor="middle" fill="#e65100" font-size="12">fs_server = FastMCP("FS")</text>
+  <!-- Module 2: FileSystem (Local Sub-server) -->
+  <rect x="380" y="140" width="240" height="120" rx="8" fill="#fff" stroke="#ff9800" stroke-width="2" stroke-dasharray="4"/>
+  <text x="500" y="170" text-anchor="middle" fill="#e65100" font-size="14" font-weight="700">Módulo Secundario</text>
+  <text x="500" y="190" text-anchor="middle" fill="#e65100" font-size="12">Sub-servidor instanciado local</text>
+  <rect x="400" y="205" width="200" height="40" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="500" y="230" text-anchor="middle" fill="#e65100" font-size="13" font-weight="600">fs_server = FastMCP("FS")</text>
 
-  <!-- Module 2: Import (Remote/Package) -->
-  <rect x="530" y="140" width="220" height="120" rx="8" fill="#fff" stroke="#9c27b0" stroke-width="2" stroke-dasharray="4"/>
-  <text x="640" y="165" text-anchor="middle" fill="#7b1fa2" font-size="12" font-weight="700">Módulo Externo (Paquete)</text>
-  <text x="640" y="185" text-anchor="middle" fill="#7b1fa2" font-size="10">mcp-server-postgres</text>
-  <rect x="550" y="200" width="180" height="40" rx="4" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1"/>
-  <text x="640" y="225" text-anchor="middle" fill="#7b1fa2" font-size="12">Comando CLI / Paquete</text>
+  <!-- Module 3: Import (Remote/Package) -->
+  <rect x="680" y="140" width="240" height="120" rx="8" fill="#fff" stroke="#9c27b0" stroke-width="2" stroke-dasharray="4"/>
+  <text x="800" y="170" text-anchor="middle" fill="#7b1fa2" font-size="14" font-weight="700">Módulo Externo</text>
+  <text x="800" y="190" text-anchor="middle" fill="#7b1fa2" font-size="12">Paquete PyPI / NPM</text>
+  <rect x="700" y="205" width="200" height="40" rx="4" fill="#f3e5f5" stroke="#9c27b0" stroke-width="1"/>
+  <text x="800" y="230" text-anchor="middle" fill="#7b1fa2" font-size="13" font-weight="600">mcp-server-postgres</text>
 
-  <!-- Arrows and composition methods -->
-  <line x1="390" y1="260" x2="390" y2="300" stroke="#00897b" stroke-width="2.5" marker-end="url(#a)"/>
-  <text x="390" y="285" text-anchor="middle" fill="#00695c" font-size="12" font-weight="700">mcp.mount()</text>
+  <!-- Arrows mapping to Catalog -->
+  <line x1="200" y1="260" x2="200" y2="320" stroke="#00897b" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="210" y="295" text-anchor="start" fill="#00695c" font-size="12" font-weight="600">Nativas</text>
 
-  <line x1="640" y1="260" x2="640" y2="300" stroke="#00897b" stroke-width="2.5" marker-end="url(#a)"/>
-  <text x="640" y="285" text-anchor="middle" fill="#00695c" font-size="12" font-weight="700">mcp.import_server()</text>
+  <line x1="500" y1="260" x2="500" y2="320" stroke="#00897b" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="510" y="295" text-anchor="start" fill="#00695c" font-size="14" font-weight="700">mcp.mount(fs)</text>
 
-  <!-- Resulting Tools -->
-  <rect x="60" y="310" width="700" height="100" rx="8" fill="#b2dfdb" stroke="#00897b" stroke-width="1.5"/>
-  <text x="410" y="335" text-anchor="middle" fill="#004d40" font-size="14" font-weight="700">Catálogo Unificado de Herramientas (con Prefijos Automáticos)</text>
+  <line x1="800" y1="260" x2="800" y2="320" stroke="#00897b" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="810" y="295" text-anchor="start" fill="#00695c" font-size="14" font-weight="700">mcp.import_server(...)</text>
+
+  <!-- Resulting Tools Unified Catalog -->
+  <rect x="60" y="325" width="880" height="115" rx="8" fill="#b2dfdb" stroke="#00897b" stroke-width="1.5"/>
+  <text x="500" y="355" text-anchor="middle" fill="#004d40" font-size="16" font-weight="700">Catálogo Unificado de Herramientas (con Prefijos Automáticos)</text>
   
-  <!-- Tools list -->
-  <rect x="80" y="350" width="180" height="40" rx="6" fill="#fff"/>
-  <text x="170" y="375" text-anchor="middle" fill="#00695c" font-size="11" font-weight="600">my_local_tool</text>
+  <!-- Individual Tools matched to columns -->
+  <rect x="80" y="375" width="240" height="45" rx="6" fill="#fff" filter="url(#s)" stroke="#00897b" stroke-width="1"/>
+  <text x="200" y="402" text-anchor="middle" fill="#00695c" font-size="14" font-weight="600">my_local_tool</text>
   
-  <rect x="280" y="350" width="220" height="40" rx="6" fill="#fff"/>
-  <text x="390" y="375" text-anchor="middle" fill="#e65100" font-size="11" font-weight="600">fs__read_file</text>
+  <rect x="380" y="375" width="240" height="45" rx="6" fill="#fff" filter="url(#s)" stroke="#ff9800" stroke-width="1"/>
+  <text x="500" y="402" text-anchor="middle" fill="#e65100" font-size="14" font-weight="600">fs__read_file</text>
 
-  <rect x="530" y="350" width="210" height="40" rx="6" fill="#fff"/>
-  <text x="635" y="375" text-anchor="middle" fill="#7b1fa2" font-size="11" font-weight="600">postgres__query</text>
-
+  <rect x="680" y="375" width="240" height="45" rx="6" fill="#fff" filter="url(#s)" stroke="#9c27b0" stroke-width="1"/>
+  <text x="800" y="402" text-anchor="middle" fill="#7b1fa2" font-size="14" font-weight="600">postgres__query</text>
 </svg>
