@@ -59,4 +59,4 @@ Sigue los módulos en orden. Cada tema incluye teoría y ejercicios prácticos. 
 
 ---
 
-**Generado por Teach-Laoz**
+> **Generado por Teach-Laoz AI Agents - 2026**
