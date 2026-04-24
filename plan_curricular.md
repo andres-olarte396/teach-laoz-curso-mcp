@@ -35,20 +35,20 @@ graph TD
     L --> M[MCP en Producción]
     M --> N[Proyecto Integrador Final]
 
-    style A fill:#e1f5fe
-    style B fill:#b3e5fc
-    style C fill:#81d4fa
-    style D fill:#81d4fa
-    style E fill:#81d4fa
-    style F fill:#4fc3f7
-    style G fill:#4fc3f7
-    style H fill:#29b6f6
-    style I fill:#29b6f6
-    style J fill:#03a9f4
-    style K fill:#039be5
-    style L fill:#0288d1
-    style M fill:#0277bd
-    style N fill:#01579b
+    style A fill:#e1f5fe, stroke:#000000, color:#000000
+    style B fill:#b3e5fc, stroke:#000000, color:#000000
+    style C fill:#81d4fa, stroke:#000000, color:#000000
+    style D fill:#81d4fa, stroke:#000000, color:#000000
+    style E fill:#81d4fa, stroke:#000000, color:#000000
+    style F fill:#4fc3f7, stroke:#000000, color:#000000
+    style G fill:#4fc3f7, stroke:#000000, color:#000000
+    style H fill:#29b6f6, stroke:#000000, color:#000000
+    style I fill:#29b6f6, stroke:#000000, color:#000000
+    style J fill:#03a9f4, stroke:#ffffff, color:#ffffff
+    style K fill:#039be5, stroke:#ffffff, color:#ffffff
+    style L fill:#0288d1, stroke:#ffffff, color:#ffffff
+    style M fill:#0277bd, stroke:#ffffff, color:#ffffff
+    style N fill:#01579b, stroke:#ffffff, color:#ffffff
 ```
 
 ## OBJETIVOS GENERALES DEL CURSO
