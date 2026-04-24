@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'Segoe UI',system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Segoe UI',system-ui,sans-serif">
   <defs>
     <filter id="s"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
     <linearGradient id="h" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#01579b"/><stop offset="100%" stop-color="#0288d1"/></linearGradient>
     <marker id="a" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0288d1"/></marker>
     <marker id="ag" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#4caf50"/></marker>
   </defs>
-  <rect width="800" height="480" rx="12" fill="#f5f7fa"/>
+  <rect width="800" height="520" rx="12" fill="#f5f7fa"/>
   <rect x="0" y="0" width="800" height="56" rx="12" fill="url(#h)"/>
   <rect x="0" y="24" width="800" height="32" fill="url(#h)"/>
   <text x="400" y="36" text-anchor="middle" fill="#fff" font-size="20" font-weight="700">Ecosistema MCP</text>
@@ -27,30 +27,30 @@
 
   <!-- MCP Protocol Layer -->
   <rect x="60" y="245" width="680" height="50" rx="25" fill="#0288d1" filter="url(#s)"/>
-  <text x="400" y="275" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Model Context Protocol (MCP)</text>
-  <text x="170" y="265" fill="#e1f5fe" font-size="9">JSON-RPC 2.0</text>
-  <text x="440" y="265" fill="#e1f5fe" font-size="9">stdio | SSE | Streamable HTTP</text>
-  <text x="640" y="265" fill="#e1f5fe" font-size="9">OAuth 2.1</text>
+  <text x="400" y="268" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Model Context Protocol (MCP)</text>
+  <text x="170" y="285" text-anchor="middle" fill="#e1f5fe" font-size="10">JSON-RPC 2.0</text>
+  <text x="400" y="285" text-anchor="middle" fill="#e1f5fe" font-size="10">stdio | SSE | Streamable HTTP</text>
+  <text x="630" y="285" text-anchor="middle" fill="#e1f5fe" font-size="10">OAuth 2.1</text>
 
   <!-- MCP Servers -->
   <text x="400" y="325" text-anchor="middle" fill="#4caf50" font-size="13" font-weight="700">Servidores MCP</text>
-  <rect x="30" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="80" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">Filesystem</text><text x="80" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Archivos</text>
-  <rect x="140" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="190" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">PostgreSQL</text><text x="190" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Base de datos</text>
-  <rect x="250" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="300" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">Git</text><text x="300" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Repositorios</text>
-  <rect x="360" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="410" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">Slack</text><text x="410" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Mensajeria</text>
-  <rect x="470" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="520" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">GitHub</text><text x="520" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Codigo</text>
-  <rect x="580" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="630" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">Custom</text><text x="630" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Tu servidor</text>
-  <rect x="690" y="335" width="80" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="730" y="355" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">+ 1000s</text><text x="730" y="370" text-anchor="middle" fill="#546e7a" font-size="8">Comunidad</text>
+  <rect x="20" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="70" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">Filesystem</text><text x="70" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Archivos</text>
+  <rect x="130" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="180" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">PostgreSQL</text><text x="180" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Base de datos</text>
+  <rect x="240" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="290" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">Git</text><text x="290" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Repositorios</text>
+  <rect x="350" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="400" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">Slack</text><text x="400" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Mensajería</text>
+  <rect x="460" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="510" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">GitHub</text><text x="510" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Código</text>
+  <rect x="570" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="620" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">Custom</text><text x="620" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Tu servidor</text>
+  <rect x="680" y="335" width="100" height="50" rx="8" fill="#e8f5e9" stroke="#4caf50" stroke-width="1.5" filter="url(#s)"/><text x="730" y="355" text-anchor="middle" fill="#2e7d32" font-size="10" font-weight="600">+ 1000s</text><text x="730" y="370" text-anchor="middle" fill="#546e7a" font-size="9">Comunidad</text>
 
   <!-- Data Sources -->
   <text x="400" y="415" text-anchor="middle" fill="#ff9800" font-size="13" font-weight="700">Fuentes de Datos y Servicios</text>
-  <rect x="80" y="425" width="100" height="30" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="130" y="445" text-anchor="middle" fill="#e65100" font-size="9">Bases de Datos</text>
-  <rect x="200" y="425" width="100" height="30" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="250" y="445" text-anchor="middle" fill="#e65100" font-size="9">APIs REST</text>
-  <rect x="320" y="425" width="100" height="30" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="370" y="445" text-anchor="middle" fill="#e65100" font-size="9">Cloud Storage</text>
-  <rect x="440" y="425" width="100" height="30" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="490" y="445" text-anchor="middle" fill="#e65100" font-size="9">Repositorios</text>
-  <rect x="560" y="425" width="100" height="30" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="610" y="445" text-anchor="middle" fill="#e65100" font-size="9">IoT / Hardware</text>
+  <rect x="85" y="425" width="110" height="32" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="140" y="446" text-anchor="middle" fill="#e65100" font-size="10">Bases de Datos</text>
+  <rect x="215" y="425" width="110" height="32" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="270" y="446" text-anchor="middle" fill="#e65100" font-size="10">APIs REST</text>
+  <rect x="345" y="425" width="110" height="32" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="400" y="446" text-anchor="middle" fill="#e65100" font-size="10">Cloud Storage</text>
+  <rect x="475" y="425" width="110" height="32" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="530" y="446" text-anchor="middle" fill="#e65100" font-size="10">Repositorios</text>
+  <rect x="605" y="425" width="110" height="32" rx="6" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/><text x="660" y="446" text-anchor="middle" fill="#e65100" font-size="10">IoT / Hardware</text>
 
   <!-- Key message -->
-  <rect x="120" y="466" width="560" height="24" rx="6" fill="#263238"/>
-  <text x="400" y="483" text-anchor="middle" fill="#4fc3f7" font-size="11" font-weight="600">1 protocolo estandar conecta TODOS los modelos con TODAS las herramientas</text>
+  <rect x="120" y="475" width="560" height="28" rx="6" fill="#263238"/>
+  <text x="400" y="494" text-anchor="middle" fill="#4fc3f7" font-size="12" font-weight="600">1 protocolo estándar conecta TODOS los modelos con TODAS las herramientas</text>
 </svg>
